@@ -1,0 +1,19 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><a >ST111 Probability A</a></li>
+      after: |
+        <li><a href="https://moodle.warwick.ac.uk/course/view.php?id=41510" target="blank"></a></li>
+    download: ["pdf"]
+  split_by: chapter+number
+  includes:
+    in_header: mathjax_header.html
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: pdflatex
+  citation_package: natbib
+  keep_tex: yes

@@ -1,0 +1,97 @@
+# Experiments with random outcomes
+
+**Chapter outcomes**
+
+At the end of the chapter you should:
+
+- Know the definitions of sample space, sample point, event and probability measure.
+- Be able to analyse and then formulate problems in terms of sample spaces, events and probability measures.
+- Be able to select and apply appropriate theory to determine probabilities.
+
+
+**Chapter Statistician: Florence Nightingale**
+
+Although Florence Nightingale is remembered for her role in founding the modern nursing profession, she was a gifted mathematician being described as `a true pioneer in the graphical representation of statistics'.  She used the graphical representations in presentations to Parliament and civil servants. Her work improved public health through, for example, the Public Health Acts of 1874 and 1875. In 1859, she was elected a member of the Royal Statistical Society. In 1874, she became an honorary member of the American Statistical Association.
+```{r, out.width = "30%", fig.align='center', fig.cap="Florence Nightingale", echo=FALSE} 
+knitr::include_graphics('images/ST111_Florence_Nightingale_(H_Hering_NPG_x82368).jpg')
+```
+Image available [online](https://en.wikipedia.org/wiki/File:Florence_Nightingale_(H_Hering_NPG_x82368).jpg).
+Image licence: The image is in the public domain.
+
+
+## Chapter 1 content summary
+
+The follow section outlines the key topics studied in this chapter.
+
+
+#### Definitions {-}
+
+An **experiment with a random outcome** is any procedure that involves making observations of something that is random and cannot be predicted precisely in advance.
+
+The **sample space**, usually denoted by $\Omega$, is a set whose elements, called \emph{sample points}, each correspond to a possible outcome of the experiment.
+
+An **event** is a property that the outcome of the experiment may or may not have. We identify events with the subset of $\Omega$ containing those sample points with the relevant property.
+
+#### Set operations{-}
+
+Sets provide a language to describe events
+
+
+Event as a set  | Events as properties of the outcome 
+|---------------|-------------------------------------|
+|$A\cup B$      |  At least one of $A$ or $B$ occurs 
+|$A\cap B$      |$A$ and $B$ both occur 
+|$A^c$          |$A$ does not occur 
+|$A\subseteq B$ |If $A$ occurs, then $B$ occurs
+
+
+#### Probability in some simple experiments {-}
+
+For a finite sample space where, for reasons of symmetry, we treat outcomes as equally likely we define the probability of an event $A$ by
+\[
+\mathbf{P}(A) = \frac{\mbox{number of sample points in }A}{\mbox{number of sample points in }\Omega}
+\]
+For the experiment of picking a point uniformly at random from a subset $\Omega$ of the plane, we define the probability of an event $A$ by
+\[
+\mathbf{P}(A) = \frac{\mbox{Area of } A}{\mbox{Area of }\Omega}
+\]
+Sampling from a large population consisting of individuals of type $a$ and individuals of type $b$ in the proportion $p:1-p$. We can take $\Omega = \{a, b\}$ and assign probabilities $\mathbf{P}(\{a\}) = p$ and $\mathbf{P}(\{b\}) = 1 - p.$
+
+#### Definition of a probability measure. {-}
+ 
+A probability measure on a sample space $\Omega$ is a function $A\mapsto \mathbf{P}(A)$ defined for some collection of events which are subsets of $\Omega$, that satisfies the following two properties.
+
+1. For every event $A$ for which $\mathbf{P}(A)$ is defined, $0 \leq \mathbf{P}(A) \leq 1$, with $\mathbf{P}(\emptyset) = 0$ and $\mathbf{P}(\Omega) = 1$.
+
+2. For a finite or infinite sequence of **mutually disjoint events** $A_1, A_2 , \ldots , A_n , \ldots$ for which $\mathbf{P}(A_i)$ is defined for all $i$,
+\[
+\mathbf{P} \left( \bigcup_{i=1}^n A_i\right) = \sum_{i=1}^n \mathbf{P} (A_i),
+\]
+and, in the case of an infinite sequence,
+\[
+\mathbf{P} \left( \bigcup_{i=1}^{\infty} A_i\right) = \sum_{i=1}^{\infty} \mathbf{P} (A_i).
+\]
+
+
+#### Interpretation of probability {-}
+
+- _Frequentist:_ $\mathbf{P}(A)$ is the long run frequency of $A$ occurring in many repetitions of the experiment.
+- _Bayesian:_ $\mathbf{P}(A)$ quantifies belief in $A$ occurring---as can be measured by considering betting odds.
+
+#### Properties of probability measures {-}
+
+1. $\mathbf{P}(A^c) = 1 - \mathbf{P}(A)$,
+2. If $A\subseteq B$ then $\mathbf{P}(A) \leq \mathbf{P}(B)$.
+3. $\mathbf{P}(A \cup B) = \mathbf{P}(A) + \mathbf{P}(B) - \mathbf{P}(A \cap B)$.
+4. For general sequences of events that are not necessarily disjoint,
+\[
+\mathbf{P} \left( \bigcup_{i=1}^n A_i\right) \leq \sum_{i=1}^n \mathbf{P} (A_i),
+\]
+and, in the case of an infinite sequence,
+\[
+\mathbf{P} \left( \bigcup_{i=1}^{\infty} A_i\right) \leq \sum_{i=1}^{\infty} \mathbf{P} (A_i).
+\]
+5. The inclusion-exclusion formula:
+\[
+\mathbf{P} \left( \bigcup_{i=1}^{n} A_i\right) = \sum_{1\leq i \leq n} \mathbf{P} (A_i) - \sum_{1\leq i_1< i_2 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2}) + \sum_{1\leq i_1 < i_2 < i_3 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap A_{i_3}) - \ldots
+\]

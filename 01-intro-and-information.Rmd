@@ -1,0 +1,19 @@
+# Module Introduction and Information {-}
+
+**Moodle** The module's [Moodle page](https://moodle.warwick.ac.uk/course/view.php?id=41510) provides vital information regarding this module's operation. 
+
+**Information** The module web-page https://go.warwick.ac.uk/st111 (Probability A) contains full module details and information. (Note, you may be asked for your Warwick sign-on to view this page.) Details on the sequel module Probability B are available via https://go.warwick.ac.uk/st112.
+
+These notes are designed to be a self-contained study resource that you must use in conjunction with the Moodle resources and tutorials. The notes contains gaps that you must complete. The nature of the gaps indicates how you will typically complete them.
+
+
+**Examples** We will complete these together during class.
+
+**Questions** We may complete some or all of these during class. Those questions that are not completed during class you must complete as part of your independent study.
+
+Proofs and other gaps We will typically complete these together during class.
+
+
+Each chapter contains a summary and consolidation questions. The consolidation questions are designed for when you have finished working through a chapter and typically require deeper thought to complete.
+
+**Acknowledgements** These lecture notes are adapted from those of the previous module's lecturer Jon Warren. Responsibility for any errors is mine.

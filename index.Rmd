@@ -1,0 +1,42 @@
+--- 
+title: "Probability A"
+author: "Leonardo T. Rolla"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+classoption: twoside
+bibliography: [references.bib]
+biblio-style: "abbrvnat"
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "These are the lecture notes for the ST111 Probability A module taught at the University of Warwick in the academic year of 2021/2022."
+---
+
+# Preface {-}
+
+
+This work is licensed under
+
+```{r, fig.alt="Creative Commons Attribution-ShareAlike license", fig.align='center', echo=FALSE, out.width="30%", fig.pos="H"}
+knitr::include_graphics("./images/by-sa.svg")
+```
+
+**Reusing this material**
+
+This licence allows users to distribute, remix, adapt, and build upon
+the material in any medium or format, so long as attribution is given to
+the creator. The licence allows for commercial use. If you remix, adapt,
+or build upon the material, you must license the modified version under
+identical terms.
+
+**Source code**
+
+If you make changes to these notes, please distribute the modified
+source code along with the typeset material, and please keep this
+request to those who receive it. This is a kind request from the author,
+not a legal requirement.
+
+
+
+

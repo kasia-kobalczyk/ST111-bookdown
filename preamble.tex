@@ -1,0 +1,22 @@
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage[margin=1in]{geometry}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+%
+% Change the font to sans-serif
+%
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault}
+
+\renewcommand*{\url}[1]{\href{\detokenize{#1}}{link}}
+
+%
+% Set coloured hyperlinks
+%
+\hypersetup{hidelinks,colorlinks,urlcolor=blue,linkcolor=[rgb]{0.7,0,0},citecolor=[rgb]{0.7,0,0}}
