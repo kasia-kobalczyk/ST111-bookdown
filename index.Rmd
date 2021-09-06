@@ -13,10 +13,6 @@ github-repo: rstudio/bookdown-demo
 description: "These are the lecture notes for the ST111 Probability A module taught at the University of Warwick in the academic year of 2021/2022."
 ---
 
-```{r, echo=FALSE}
-showsolution <- TRUE
-```
-
 # Preface {-}
 
 

@@ -1,0 +1,53 @@
+# (APPENDIX) Appendix {-}
+
+# Solution to Exercises {-}
+
+## Chapter 1 {-}
+
+### Class 1 {-}
+
+:::{.proof name="Solution to exercise \@ref(exr:cards40)"}
+In some cases there are multiple different, but equivalent answers. Let $A$ be the event the drawn card shows a "W" and $B$ be the event the drawn card shows a "X". 
+
+1. The event $A\cap B$ is the card show "W" and "X", which cannot occur; that is, $A \cap B = \emptyset\subseteq \Omega$.
+
+2. The event $A^c$ is the outcome the card does not show a "W".
+:::
+
+:::{.proof name="Solution to exercise \@ref(exr:dice1)"}
+In this case, $\Omega = \{1, 2, 3, 4, 5, 6\}$. Let $A$ be the event $A=\{2,4\}$ and $B=\{2,4,6\}$; that is, the dice shows an even number. Then $A\subseteq B$; that is, is the event that if the dice shows 2 or 4, then the dice shows an even number.
+:::
+
+:::{.proof name="Solution to exercise \@ref(exr:dice2)"}
+&nbsp;
+
+1. $E_1 = B \setminus C$.
+
+2. $E_2 = C \setminus B = C \cap A$.
+
+3. $E_3 = D \setminus A = D \cap B = D \cap C$.
+
+4. $E_4 = A \setminus (C \cup D)$.
+
+5. $E_5 = (B \cap C) \setminus D = C \setminus (A \cup D)$.
+
+6. $E_6 = D \setminus B = D \setminus C = A \cap D$.
+:::
+
+:::{.proof name="Solution to exercise \@ref(exr:dice3)"}
+The set $\displaystyle\bigcap_{k=1}^n A_k$ is the event that every roll results is a 6. This contains one sample point, namely $\omega = (6,\ldots, 6)$ and
+\[
+\mathbf{P} \left(
+\bigcap_{k=1}^n A_k
+\right)
+=
+\frac{1}{6^n}.
+\]
+:::
+
+:::{.proof name="Solution to exercise \@ref(exr:integer)"}
+The sample space is $\Omega = \{ 1, 2, \ldots, 50 \}$ and $| \Omega | = 50$. The required event is $A = \{ 12, 24, 36, 48 \}$ with $|A| = 4$. Therefore,
+\[
+\mathbf{P}(A) = \frac{ |A| }{|\Omega|} = \frac{4}{50} = \frac{2}{25}.
+\]
+:::
