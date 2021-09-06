@@ -96,7 +96,6 @@ and, in the case of an infinite sequence,
 \mathbf{P} \left( \bigcup_{i=1}^{n} A_i\right) = \sum_{1\leq i \leq n} \mathbf{P} (A_i) - \sum_{1\leq i_1< i_2 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2}) + \sum_{1\leq i_1 < i_2 < i_3 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap A_{i_3}) - \ldots
 \]
 
-\clearpage
 ## Class 1: Equally likely events
 
 ### Introduction 
@@ -819,3 +818,5 @@ b. The coin intersects no more than one side of the square.
 
 (Here `randomly' means all landing spots on the table are equally likely.)
 :::
+
+

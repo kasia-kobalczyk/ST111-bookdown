@@ -1,6 +1,6 @@
 # (APPENDIX) Appendix {-}
 
-# Solutions to Exercises {-}
+# Solutions to Exercises
 
 ## Chapter 1 {-}
 
@@ -52,7 +52,6 @@ The sample space is $\Omega = \{ 1, 2, \ldots, 50 \}$ and $| \Omega | = 50$. The
 \]
 
 
-\clearpage
 ### Solutions to [Class 2 Exercises] {-}
 
 **Solution to exercise \@ref(exr:twoevents)**
@@ -96,7 +95,6 @@ Since $A \subseteq A \cup B$ we have $1 = \mathbf{P}(A) \leq \mathbf{P} (A \cup 
 \]
 
 
-\clearpage
 ### Solutions to [Class 3 Exercises] {-}
 
 **Solution to exercise \@ref(exr:tablecoin)**
@@ -147,7 +145,6 @@ Therefore,
 \]
 
 
-\clearpage
 ### Solutions to [Chapter 1 Consolidation Questions] {-}
 
 **Solution to exercise \@ref(exr:repeatedroll)**
@@ -207,7 +204,6 @@ a. In this case the the centre of the coin must land in a central square with si
 b. In this case determine the probability of the complementary event; that is, the coin's centre comes to rest in one of the four corner squares with side $r$. Therefore, the require probability is $1 - 4\left( \dfrac{r}{a} \right)^2$.
 
 
-\clearpage
 ## Chapter 2 {-}
 
 ### Solutions to [Class 4 Exercises] {-}
@@ -232,7 +228,6 @@ There are ${16 \choose 8}= 12870$ such subsets.
 2. A path that passes through the centre of the board can be selected by first choosing path from the bottom/left to the centre and then choosing a path from the centre to the top/right. There are ${8 \choose 4} = 70$ possible paths for each of these choices and hence $70^2 = 4900$ paths through the centre. This gives a probability of $\dfrac{4900}{12870} \approx  0.38$.
 
 
-\clearpage
 ### Solutions to [Class 5 Exercises] {-}
 
 **Solution to exercise \@ref(exr:twins)**
@@ -292,7 +287,6 @@ In the first case, fix one of the twins, $T_1^1$ say, then there are $2\times2\t
 \]
 
 
-\clearpage
 ### Solutions to [Class 6 Exercises] {-}
 
 **Solution to exercise \@ref(exr:die8)**
@@ -418,7 +412,6 @@ But ${\mathbf P}(A_i\cap A_{i+1})= 2^{-11}$  ,  ${\mathbf P}(A_i\cap A_{i+2})= 2
 which is useless since probabilities are always non-negative.
 
 
-\clearpage
 ### Solutions to [Chapter 2 Consolidation Questions]
 
 **Solution to exercise \@ref(exr:smalltown)**
