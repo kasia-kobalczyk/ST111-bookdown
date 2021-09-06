@@ -1,0 +1,28 @@
+\clearpage
+### Class 2: Questions
+
+:::{.exercise #twoevents}
+Let $A$ and $B$ be two events in a suitable sample space such that $\mathbf{P}(A) = \frac{1}{4}$, $\mathbf{P}(B) = \frac{8}{10}$ and $\mathbf{P}(A \cap B^c) = \frac{1}{10}$. Calculate 
+
+1. $\mathbf{P}(A \cap B)$
+
+2. $\mathbf{P}(A^c \cap B^c)$.
+:::
+
+:::{.exercise #satprobmeasure}
+Does 
+\[
+\mathbf{P}(A) = \left(
+\frac{\mbox{area}(A)}{\mbox{area}(\Omega)}
+\right)^2
+\]
+satisfy the definition of a probability measure?
+:::
+
+:::{.exercise #equallylikely}
+Let $\Omega$ be a sample space of an experiment. Suppose $| \Omega | = n$. Suppose for every $\omega_1, \omega_2 \in \Omega$ that events $\{ \omega_1 \}$ and $\{ \omega_2 \}$ are equally likely. We have proved that for any $\omega \in \Omega$, $\mathbf{P}(\omega) = \frac{1}{| \Omega |}$. Using this result, prove using the properties of probability measures that for any event $A$, $\mathbf{P}(A) = \frac{| A |}{| \Omega |}$.
+:::
+
+:::{.exercise #twoevents2}
+Let $A$ and $B$ be two events in a suitable sample space such that $\mathbf{P}(A) = \mathbf{P}(B) = 1$. Prove that $\mathbf{P}(A \cap B) =1$. 
+:::

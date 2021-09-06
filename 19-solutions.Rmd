@@ -51,3 +51,48 @@ The sample space is $\Omega = \{ 1, 2, \ldots, 50 \}$ and $| \Omega | = 50$. The
 \mathbf{P}(A) = \frac{ |A| }{|\Omega|} = \frac{4}{50} = \frac{2}{25}.
 \]
 :::
+
+
+### Class 2 {-}
+
+:::{.proof name="Solution to exercise \@ref(exr:twoevents)"}
+This question is an application of Theorem\@ref(thm:propertiesofmeasures) and the principles used in its proof.
+
+1. Observe that $A = (A \cap B) \cup (A \cap B^c)$ with $A\cap B$ and $A \cap B^c$ disjoint. Therefore, using additivity,
+\[
+\mathbf{P}( A ) = \mathbf{P} ( (A \cap B) \cup (A \cap B^c) ) = \mathbf{P}(A\cap B) + \mathbf{P}(A \cap B^c)
+\]
+Hence,
+\[
+\mathbf{P}(A \cap B) = \mathbf{P}(A) - \mathbf{P}(A \cap B^c) = \frac{1}{4} - \frac{1}{10} = \frac{15}{100}.
+\]
+
+2. Observe that $B^c = (A^c \cap B^c) \cup (A \cap B^c)$ with the union being disjoint. Then using the same methods as part 1 we have
+\[
+\mathbf{P}(A^c \cap B^c) = \mathbf{P}(B^c) - \mathbf{P}(A \cap B^c) = 1 - \mathbf{P}(B) - \mathbf{P} (B^c \cap A) = 1 - \frac{8}{10} - \frac{1}{10} = \frac{1}{10}.
+\]
+:::
+
+:::{.proof name="Solution to \@ref(exr:satprobmeasure)"}
+No. Notice that for disjoint $A$ and $B$
+\[
+\mathbf{P}(A \cup B) = \left(
+\frac{\mbox{area}(A) + \mbox{area}(B)}{\mbox{area}(\Omega)}
+\right)^2 \neq \mathbf{P}(A) +  \mathbf{P}(B)
+\]
+:::
+
+:::{.proof name="Solution to \@ref(exr:equallylikely)"}
+Let $A$ be an event. Then $|A| = k$ for some $k \in \{ 1, 2, \ldots n \}$ and $A$ has the form $A = \{ \omega_{i_1}, \omega_{i_2}, \ldots ,\omega_{i_k}\}$, where $1 \leq i_1 < i_2 < \ldots i_k \leq n$. Then
+\[
+\mathbf{P}(A) = \mathbf{P} \left( \bigcup_{j=1}^k \{ \omega_{i_j} \} \right) = \sum_{j=1}^k \mathbf{P} ( \{ \omega_{i_j} \} ) = \sum_{j=1}^k \frac{1}{n} = \frac{k}{n} = \frac{| A |}{| \Omega |}.
+\]
+:::
+
+:::{.proof name="Solution to \@ref(exr:twoevents2)"}
+Since $A \subseteq A \cup B$ we have $1 = \mathbf{P}(A) \leq \mathbf{P} (A \cup B)$. Since $\mathbf{P} (A \cup B) \leq 1$, if follows that $\mathbf{P}(A \cup B) =1$. Furthermore,  
+\[
+\mathbf{P}(A \cap B) = \mathbf{P}(A) + \mathbf{P}(B) - \mathbf{P}(A \cup B) = 1 + 1 - 1 = 1.
+\]
+:::
+
