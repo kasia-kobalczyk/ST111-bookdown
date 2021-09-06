@@ -96,3 +96,115 @@ Since $A \subseteq A \cup B$ we have $1 = \mathbf{P}(A) \leq \mathbf{P} (A \cup 
 \]
 :::
 
+
+### Class 3 {-}
+
+:::{.proof name="Solution to exercise \@ref(exr:tablecoin)"}
+Let $A_1$ be the the event that the coin crosses a horizontal side and $A_2$ the event that the coin crosses a vertical side. Then the probability that the coin will cross a side is $\mathbf{P}(B) = \mathbf{P}(A_1\cup A_2)$. The following diagram illustrates the sample space and the events $A_1$ and $A_2$.
+
+```{r, out.width = "50%", fig.align='center', fig.cap = 'Geometry of the problem', echo=FALSE, fig.pos="H"} 
+knitr::include_graphics('images/ST111_C1_Geometric_Probability_Example.png')
+```
+
+Note, you can compute $\mathbf{P}(A_1)$, $\mathbf{P}(A_2)$ and $\mathbf{P}(A_1\cap A_2)$ directly and the use $\mathbf{P}(A_1\cup A_2 ) = \mathbf{P}(A_1) + \mathbf{P}(A_2) - \mathbf{P}(A_1 \cap A_2)$. If you take this approach then $\mathbf{P}(A_1) = \dfrac{1}{5}$, $\mathbf{P}(A_2) = \dfrac{1}{10}$, $\mathbf{P}(A_1\cap A_2) = \dfrac{1}{50}$ and thus
+\[
+\mathbf{P}(A_1 \cup A_2) = \mathbf{P}(A_1) + \mathbf{P}(A_2) - \mathbf{P}(A_1 \cap A_2) = \frac{1}{5} + \frac{1}{10} - \frac{1}{50} = \frac{7}{25}. 
+\]
+:::
+
+:::{.proof name="Solution to exercise \@ref(exr:newgame)"}
+We may assume that the numbers in the envelops are 1, 2, 3 and 4. Thus, the sample space is $\Omega = \{ (a,b,c,d) \mid a,b,c,d \in \{1,2,3,4\}\mbox{ and } a\neq b\neq c \neq d \neq a\}$. Let $(n_1,n_2,n_3,n_4)$  be such that $\{n_1,n_2,n_3,n_4\} = \{1,2,3,4\}$ and $n_k = i$ if participant $k$ receives the $i$th participant's envelop. (For example, $(2,4,1,3)$ means participant 1 gets the 2nd participant's envelope.)
+
+Let $A_i = \{ (n_1,n_2,n_3,n_4) : n_i = i \}$. Then $A_i$ is the event that participant $i$ receives their envelope. Let 
+\[
+B = \bigcup_{i = 1,2,3,4} A_i.
+\]
+This is the event that at least one participant receives their gives, thus we shall determine $B^c$ and then (since $\Omega$ is finite)
+\[
+\mathbf{P}(B^c) = \frac{|\Omega| - |B|}{|\Omega|}.
+\]
+Note that the events $A_1$, $A_2$, $A_3$ and $A_4$ are not disjoint, so we use the inclusion--exclusion formula; that is,
+\[
+|B| = \left(\sum_{i=1}^4 |A_i|\right) - \left(\sum_{1\leq i< j\leq 4} |A_i \cap A_j|\right) + \left(\sum_{1\leq i_1< i_2<i_3\leq 4} |A_{i_1} \cap A_{i_2}\cap A_{i_3}|\right) - |A_1\cap A_2 \cap A_3 \cap A_4|.
+\]
+We proceed in stages.
+
+- Firstly, $|A_i| = 6$. To see this note that one $n_i$ is fixed leaving 3 terms to vary freely from a selection of three numbers. In total there are 4 sets $A_i$.
+- Next, for $i\neq j$, $|A_i \cap A_j | = 2$. (Both $i$ and $j$ are fixed which leaves a choice of 2 prizes for the for 2 people, but as soon as one is selected the final one is forced.). In total there are 6 sets $A_i\cap A_j$. %So by the inclusion-exclusion formula $|A_i \cup A_j| = |A_i| + |A_j| - |A_i \cap A_j| = 6+6-2 = 10$. 
+- Note that for $i\neq j\neq k\neq i$ (so $k$ is not equal to $i$ either), $|A_i \cap A_j \cap A_k| = 1$; that is, three of the components of $(n_1,n_2,n_3,n_4)$ are fixed leaving one free to be chosen from a choice of 1 number. There are four sets $A_i \cap A_j \cap A_k$.
+- Finally $|A_1\cap A_2 \cap A_3 \cap A_4|=1$.
+- Therefore, 
+\begin{align*}
+|B| &= \left(\sum_{i=1}^4 |A_i|\right) - \left(\sum_{1\leq i< j\leq 4} |A_i \cap A_j|\right) + \left(\sum_{1\leq i_1< i_2<i_3\leq 4} |A_{i_1} \cap A_{i_2}\cap A_{i_3}|\right) - |A_1\cap A_2 \cap A_3 \cap A_4| \\
+&= 4\times 6 - 6\times 2 + 4\times 1 - 1 \\
+&= 15
+\end{align*}
+Therefore,  $|B^c| = 24 - 15 = 9$.
+
+Therefore, 
+\[
+\mathbf{P}(B^c) = \frac{9}{24} = \frac{3}{8}.
+\]
+:::
+
+### Chapter 1 Consolidation {-}
+
+:::{.proof name="Solution to exercise \@ref(exr:repeatedroll)"}
+The sample space is $\Omega = \{1, 2, \ldots, 6\}^n$ and contains $6^n$ sample points.
+a. Let $A$ be the event that the $n$th roll produces the first 6. Then $A = \{ (\omega_1, \ldots, \omega_{n-1}, 6) \}$, where $\omega_i \in \{ 1, 2, 3, 4, 5 \}$ for $1 \leq i \leq n-1$. Then $|A| = 5^{n-1}$ and 
+\[
+\mathbf{P}(A) = \frac{|A|}{|\Omega|} = \frac{5^{n-1}}{6^n} = \left( \frac{5}{6} \right)^{n-1}\times\frac{1}{6}.
+\] 
+b. Let $A = \{ (\omega_1, \ldots, \omega_{n-1}, 6) \}$, where $\omega_i \in \{ 1, 2, 3, 4, 5 \}$ for $1 \leq i \leq n-1$ and there exists $1\leq j \leq n-1$ such that $\omega_j = 5$. Note that $|A| = |A^c|$. That is, $A$ is the event that a 5 arises before a 6, but since the die is fair, the number of ways this occurs must equal the number of ways a 6 occurs before a 5; that is, the event $A^c$. Thus since $\mathbf{P}(A) + \mathbf{P}(A^c) = 1$, $\mathbf{P}(A) = \dfrac{1}{2}$. 
+:::
+
+:::{.proof name="Solution to exercise \@ref(exr:fourplayers)"}
+Let $H$ denote the outcome that the coin shows a head and $T$ denote the outcome that the coin shows a tail. 
+
+a. Note that player 1 can only win if the first two tosses are both heads. In this case the sample space is $\Omega = \{H,T\}^2$ and contains $2^2=4$ sample points. Let $A=\{(H,H)\}$ be the event that the first two coin tosses are heads, then
+\[
+\mathbf{P}(A) = \frac{|E|}{|\Omega|} = \frac{1}{4}.
+\]
+Therefore, the probability that $P_1$ wins is $\dfrac{1}{4}$.
+
+b. (Summary solution, you should write it out formally). If the first two coin tosses are both heads, then $P_1$ must win. If the first two tosses are both tails, then $P_3$ must win. If the first two tosses are head then tail or tail then head, then either $P_2$ or $P_4$ must win. In all cases and following the same reasoning as above, each probability is $\dfrac{1}{4}$.
+:::
+
+:::{.proof name="Solution to exercise \@ref(exr:cardcollection)"}
+The sample space $\Omega$ is all arrangements of $1, 2, \ldots, m$; that is, $\Omega = \{ (a_1,a_2,a_3,a_4,\ldots, a_m) \mid \{a_1,a_2,a_3,a_4,\ldots, a_m\} = \{1,2,3,4,\ldots, m\} \}$. Note $|\Omega | = m!$. Introduce the notation $n_k$, where $n_k = i$ if row position $k$ has the $i$th labelled card. Let $E_i = \{ (n_1,\ldots, n_m) \mid n_i = i \}$. Then $E_i$ is the event the card labelled $i$ is in the $i$th position in the row. We wish to determine 
+\[
+\mathbf{P} \left( \bigcup_{1\leq i \leq m} E_i \right).
+\]
+Using the inclusion-exclusion formula gives
+\begin{align*}
+\mathbf{P} \left( \bigcup_{1\leq i \leq n} E_i \right) &= n\times \frac{1}{n} - {n \choose 2} \times \frac{1}{n(n-1)} + {n \choose 3}\times \frac{1}{n(n-1)(n-2)} - \ldots + (-1)^{m+1}\times \frac{1}{m!} \\
+&= 1 - \frac{1}{2!} + \frac{1}{3!} - \ldots + (-1)^{m+1}\frac{1}{m!}.
+\end{align*}
+To see this in another way. The set $E_{i_1} \cap E_{i_2} \cap \ldots \cap E_{i_k}$ is the event that the cards $i_1, i_2, \ldots, i_k$ are in the correct position. By the fundamental multiplication rule for counting, this can occur in $(m-k)!$ ways. (That is, $k$ cards must return to their original positions leaving $m-k$ cards free to be placed anyway, giving $(m-k)!$ ways.) Since there are $m$ cards we have
+\[
+\P (E_{i_1} \cap E_{i_2} \cap \ldots \cap E_{i_k}) = \frac{(m - k)!}{m!}.
+\]
+Furthermore, the summation $\displaystyle \sum_{1\leq i_1 < i_2 < \ldots < i_k \leq m} \P (E_{i_1} \cap E_{i_2} \cap \ldots \cap E_{i_k})$ contains ${m \choose k}$ terms. Therefore,
+\[
+\sum_{1\leq i_1 < i_2 < \ldots < i_k \leq m} \P (E_{i_1} \cap E_{i_2} \cap \ldots \cap E_{i_k}) = \frac{m!}{(m-k)!k!}\times \frac{(m-k)!}{m!} = \frac{1}{k!}.
+\]
+So, for example, $P_1 = \frac{1}{1!}$, $P_2 = \frac{1}{2!}$ and so on.
+:::
+
+:::{.proof name="Solution to exercise \@ref(exr:largesquare)"}
+This question is very similar to an earlier example and an appropriate diagram is almost identical. For this reason we sketch out the solutions.
+
+a. In this case the the centre of the coin must land in a central square with side lengths $a-2r$. Hence the probability is $\dfrac{(a-2r)^2}{a^2}$.
+b. In this case determine the probability of the complementary event; that is, the coin's centre comes to rest in one of the four corner squares with side $r$. Therefore, the require probability is $1 - 4\left( \dfrac{r}{a} \right)^2$.
+:::
+
+:::{.proof name="Solution to exercise \@ref(exr:largesquare2)"}
+This question is very similar to an earlier example and an appropriate diagram is almost identical. For this reason we sketch out the solutions.
+
+a. In this case the the centre of the coin must land in a central square with side lengths $a-2r$. Hence the probability is $\dfrac{(a-2r)^2}{a^2}$.
+
+b. In this case determine the probability of the complementary event; that is, the coin's centre comes to rest in one of the four corner squares with side $r$. Therefore, the require probability is $1 - 4\left( \dfrac{r}{a} \right)^2$.
+:::
+
+
+

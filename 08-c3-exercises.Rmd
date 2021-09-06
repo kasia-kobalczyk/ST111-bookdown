@@ -1,0 +1,14 @@
+\clearpage
+### Class 3: Questions
+
+
+:::{.exercise #tablecoin}
+This question builds on the previous example. Let $A_1$ be the the event that the coin crosses a horizontal side and $A_2$ the event that the coin crosses a vertical side. Compute $\mathbf{P}(A_1)$, $\mathbf{P} (A_2)$ and $\mathbf{P}(A_1\cap A_2)$ and thus $\mathbf{P}(A_1 \cup A_2).$
+:::
+
+:::{.exercise #newgame}
+A new game show is based entirely on chance. Four participants are selected from the audience. Each participants selects a prize from a list of available prizes, the prizes are on a first-come basis. Since the prizes vary in size from vouchers to a car, each prize is allocated a unique number. The participants select their prize by picking up the unique number written on a piece of card that corresponds to the prize that want to select.  Once each participant has selected a prize they place card with the number in a small envelope. All envelopes are identical and the participants cannot determine the envelope's contents without opening the envelop. The host places the envelopes in a bag, shakes the bag so the envelopes are in a random order. Each participant picks an envelope from the bag. Once every participant has removed an envelop, the envelops are opened. Each participant win their prize if and only if none of the participants selects their own prize. (That is, everyone selects an envelop that contains a number different to the one they selected.) 
+
+Determine the probability of winning the game show.
+:::
+
