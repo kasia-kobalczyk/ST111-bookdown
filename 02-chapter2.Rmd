@@ -31,7 +31,7 @@ Suppose a procedure consists of $k$ steps with $n_1$ choices of how to perform t
 how to perform the second step, through to $n_k$ ways of performing the $k$th step. Then the total number
 of different ways the procedure can be carried out is $n_1 \times n_2 \times \ldots \times n_k$. For example,  the number of permutations of $\{1, 2, \ldots, n\}$ is $n!$. The number of subsets of $\{1, 2,\ldots, n\}$ having $k$ elements is given by the Binomial coefficient
 \[
-\displaystyle{n \choose k} = \frac{n!}{k!(n-k)!}
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
 \]
 
 #### Applications {-}
@@ -77,7 +77,7 @@ But the order in which these 200 students are selected does not matter, so the n
 \[
 {200 \choose 11} \times {n-200 \choose 289}.
 \]
-For each sequence of students that contains 11 tickets, there are ${n-200} \choose {289}$ ways to select the remaining students so that they do not have a ticket. There are $\displaystyle {200} \choose {11}$ ways to choose a sequence of 200 students so that 11 have a ticket, so overall, there are
+For each sequence of students that contains 11 tickets, there are \( \binom{n-200}{289} \) ways to select the remaining students so that they do not have a ticket. There are \( \binom{200}{11} \) ways to choose a sequence of 200 students so that 11 have a ticket, so overall, there are
 \[
 {200 \choose 11}\times {n-200 \choose 289}
 \]
@@ -147,8 +147,7 @@ Suppose there are $n$ students in the room.
 \]
 Estimate this probability if $n = 365$, we have
 \[
-\left(
-1 + \frac{x}{n} \right)^n\rightarrow e^x
+\left( 1 + \frac{x}{n} \right)^n\rightarrow e^x
 \]
 and so
 \[
@@ -505,7 +504,7 @@ Therefore,
 \[
 \sum_{1 \leq i_1 < i_2 < \ldots < i_k \leq r} \mathbf{P} (A_{i_1}^c \cap A_{i_2}^c \cap \ldots \cap A_{i_k}^c) = {n \choose k} \left( \frac{r-k}{r} \right)^n.
 \]
-That is, there are $\displaystyle {r \choose k}$ ways to choose $1 \leq i_1 < i_2 < \ldots < i_k \leq r,\ k=1, \ldots r$. Therefore,
+That is, there are \( \binom{r}{k} \) ways to choose $1 \leq i_1 < i_2 < \ldots < i_k \leq r,\ k=1, \ldots r$. Therefore,
 \[
 \mathbf{P} (A_1^c \cup A_2^c \cup \ldots \cup A_r^c) = \sum_{k=1}^r (-1)^{k-1} {r \choose k} \left( \frac{r-k}{r} \right)^n.
 \]
@@ -514,7 +513,7 @@ Finally, we have
 \mathbf{P} (A_1 \cap A_2 \cap \ldots \cap A_r) = 1 - \mathbf{P} (A_1^c \cup A_2^c \cup \ldots \cup A_r^c) = 1 - \sum_{k=1}^r (-1)^{k-1} {r \choose k} \left( \frac{r-k}{r} \right)^n.
 \]
 
-2. There are $\displaystyle {r \choose 1}$ ways to choose a person who does not get a prize. The probability this person does not get any prizes is $\displaystyle \left( \frac{r-1}{r} \right)^n$. If exactly one person does not get any prizes, that means the remaining $r-1$ people gets a prize. Hence, the $n$ prizes are distributed to the $r-1$ people so that they each get at least one prize. 
+2. There are \( \binom{r}{1} \) ways to choose a person who does not get a prize. The probability this person does not get any prizes is \( ( \frac{r-1}{r} )^n \). If exactly one person does not get any prizes, that means the remaining $r-1$ people gets a prize. Hence, the $n$ prizes are distributed to the $r-1$ people so that they each get at least one prize. 
     By part 1 we know that when allocated $n$ prizes to $r$ people, the probability that every person gets at least one prize is 
 \[
 1 - \sum_{k=1}^r (-1)^{k-1} {r \choose k} \left( \frac{r-k}{r} \right)^n.
@@ -614,7 +613,7 @@ At a social gathering $n$ individuals wish to play a game. Each individual place
 
 1. Determine an expression for the probability that at least one individual selects their own mobile phone. Let $L(n)$ denote this expression. 
 
-2. Determine the exact value of $\displaystyle \lim_{n\rightarrow\infty} L(n)$. 
+2. Determine the exact value of \( \lim_{n\rightarrow\infty} L(n) \).
 :::
 
 
@@ -674,7 +673,7 @@ A drum contains $n$ balls, where $n\in \mathbf{Z}$ and $n\geq 5$. Each ball is l
 \[
 f(k_1) = \frac{{n_1 \choose k_1}{n - n_1 \choose k-k_1}}{{n \choose k}}
 \]
-Keep $p=\dfrac{n_1}{n}$ fixed, show that for large $n$,
+Keep $p=\frac{n_1}{n}$ fixed, show that for large $n$,
 \[
 f(k_1) \approx {k \choose k_1}p^{k_1}(1 - p)^{k - k_1}.
 \]
