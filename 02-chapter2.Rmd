@@ -50,7 +50,7 @@ population it contains $k_1$ individuals of type 1 and $k_2 = n - k_1$ individua
 \left.\frac{K_1!}{(K_1 - k_1)!k_1!}\frac{K_2!}{(K_2 - k_2)!k_2!}\right/ \frac{N!}{(N-n)!n!}.
 \]
 
-\clearpage
+
 ## Class 4: Enumeration and counting
 
 ### Introduction 
@@ -263,7 +263,7 @@ The probability that your particular ticket matches all 6 numbers is
 \]
 :::
 
-\clearpage
+
 ### Class 4 Exercises
 
 :::{.exercise #finitesets}
@@ -286,9 +286,8 @@ Consider only paths which follow the edges of the chess squares, which start at 
 2. If a path is selected at random what is the probability that it passes through the centre of board?
 :::
 
-\clearpage
-## Class 5: Samples
 
+## Class 5: Samples
 
 :::{.example}
 A _sample_ drawn from a population is some selection of individuals from that population.
@@ -438,7 +437,7 @@ In our sample of size 10, we wish 1 to have this gene and the remaining 9 to not
 \]
 :::
 
-\clearpage
+
 ### Class 5 Exercises
 
 :::{.exercise #twins}
@@ -470,7 +469,6 @@ The first $n$ individuals are interviewed and _this group_ contains a unique hig
 :::
 
 
-\clearpage
 ## Class 6: Extended examples
 
 We bring together some extended examples that illustrate the ideas covered so far.
@@ -591,7 +589,6 @@ and the event $\bigcup_{i=0}^9 A_i$ is precisely that  more than $30$ digits  ne
 :::
 
 
-\clearpage
 ### Class 6 Exercises
 
 :::{.exercise #die8}
@@ -635,7 +632,7 @@ Suppose an unbiased coin is tossed  $n=100$  times  and assume all outcomes are 
 4. Explain what happens if you try to compute a lower bound for the probability of a run of ten heads using the $A_i$ events instead of the $B_i$?
 :::
 
-\clearpage
+
 ## Chapter 2 Consolidation Questions
 
 Chapter Consolidation Questions provide additional practice covering the entire chapter. The questions may require you to evaluate information to determine the appropriate approach to solve a problem. For this reason, you may find these questions best saved for revision.
