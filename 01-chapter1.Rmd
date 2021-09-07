@@ -63,7 +63,7 @@ A probability measure on a sample space $\Omega$ is a function $A\mapsto \mathbf
 
 1. For every event $A$ for which $\mathbf{P}(A)$ is defined, $0 \leq \mathbf{P}(A) \leq 1$, with $\mathbf{P}(\emptyset) = 0$ and $\mathbf{P}(\Omega) = 1$.
 
-2. For a finite or infinite sequence of **mutually disjoint events** $A_1, A_2 , \ldots , A_n , \ldots$ for which $\mathbf{P}(A_i)$ is defined for all $i$,
+2. For a finite or infinite sequence of **mutually disjoint events** $A_1, A_2 , \dots , A_n , \dots$ for which $\mathbf{P}(A_i)$ is defined for all $i$,
 \[
 \mathbf{P} \left( \bigcup_{i=1}^n A_i\right) = \sum_{i=1}^n \mathbf{P} (A_i),
 \]
@@ -93,7 +93,7 @@ and, in the case of an infinite sequence,
 \]
 5. The inclusion-exclusion formula:
 \[
-\mathbf{P} \left( \bigcup_{i=1}^{n} A_i\right) = \sum_{1\leq i \leq n} \mathbf{P} (A_i) - \sum_{1\leq i_1< i_2 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2}) + \sum_{1\leq i_1 < i_2 < i_3 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap A_{i_3}) - \ldots
+\mathbf{P} \left( \bigcup_{i=1}^{n} A_i\right) = \sum_{1\leq i \leq n} \mathbf{P} (A_i) - \sum_{1\leq i_1< i_2 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2}) + \sum_{1\leq i_1 < i_2 < i_3 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap A_{i_3}) - \dots
 \]
 
 ## Class 1: Equally likely events
@@ -144,7 +144,7 @@ Determine the sample space and illustrate a sample point for the following.
 
 1. Assuming the dice can be distinguished we can take  $\Omega = \{1, 2, 3, 4, 5, 6\}^2$ . A sample point  $\omega = (i, j)$ corresponds to the outcome that the roll on the first die results in $i$ and that on the second dice $j$.
 
-2. We can take  $\Omega = \{1, 2,3, \ldots , 6\}^n$ . Then a sample point is a sequence  $\omega = (\omega_1, \ldots, \omega_n)$ whose terms are integers between 1 and 6. The outcome corresponding to a sample point  is the one in which the score obtained on the $k$th roll of the die is given by $\omega_k$.
+2. We can take  $\Omega = \{1, 2,3, \dots , 6\}^n$ . Then a sample point is a sequence  $\omega = (\omega_1, \dots, \omega_n)$ whose terms are integers between 1 and 6. The outcome corresponding to a sample point  is the one in which the score obtained on the $k$th roll of the die is given by $\omega_k$.
 :::
 
 
@@ -192,7 +192,7 @@ Event as a set        | Events as properties of the outcome
 |$A \setminus B$      |$A$ occurs by $B$ does not.
 |$A\cap B = \emptyset$|$A$ and $B$ are disjoint or mutally exclusive
 
-You are asked to recall the following set properties. In the following $A$, $B$, $C$ and $A_1, A_2, \ldots$ are sets.
+You are asked to recall the following set properties. In the following $A$, $B$, $C$ and $A_1, A_2, \dots$ are sets.
 
 - *Commutative law* $A \cup B = B \cup A$, $A\cap B = B \cap A$.
 - *Associative law* $A \cup (B \cup C) = (A \cup B) \cup C$, $A \cap (B \cap C) = (A \cap B) \cap C$.
@@ -214,8 +214,8 @@ Write down using suitable set-operations
 2. The sum of the two dice is not 7 and the green die shows more than 3.
 :::
 
-
 :::{.solution}
+\ 
 
 1. This is the event $A \cap B$.
 
@@ -236,7 +236,7 @@ where $|A|$ denotes the number of sample points belonging to $A$. Such probabili
 :::
 
 :::{.example}
-Consider rolling a dice $n$ times. The sample space  $\Omega = \{1, 2, \ldots , 6\}^n$ contains $6^n$ sample points.
+Consider rolling a dice $n$ times. The sample space  $\Omega = \{1, 2, \dots , 6\}^n$ contains $6^n$ sample points.
 
 1. Determine the probability that the $k$th roll of the die results in a 6.
 
@@ -247,13 +247,13 @@ Consider rolling a dice $n$ times. The sample space  $\Omega = \{1, 2, \ldots , 
 :::{.solution}
 &nbsp;
 
-1. For $k = 1, 2,\ldots , n$ let $A_k = \{ \omega = (\omega_1 , \omega_2 , \ldots , \omega_n )  : \omega_k = 6\}$. This is the event that $k$th roll of the die results in a 6. We have $|A_k | = 6^{n-1}$ (there are $n-1$ free choices), and taking the probabilities to be uniform we have
+1. For $k = 1, 2,\dots , n$ let $A_k = \{ \omega = (\omega_1 , \omega_2 , \dots , \omega_n )  : \omega_k = 6\}$. This is the event that $k$th roll of the die results in a 6. We have $|A_k | = 6^{n-1}$ (there are $n-1$ free choices), and taking the probabilities to be uniform we have
 \[
 \mathbf{P}(A_k ) = \frac{|A_k |}{\Omega} = \frac{6^{n-1}}{6^n} = \frac{1}{6},
 \]
 as we would expect.
 
-2. For $k = 1, 2,\ldots , n$ let $A_k = \{ \omega = (\omega_1 , \omega_2 , \ldots , \omega_n )  : \omega_k = 6\}$. The set $B=\displaystyle\bigcup_{k=1}^n A_k$ is the event that at least one roll results in a 6. We must determine 
+2. For $k = 1, 2,\dots , n$ let $A_k = \{ \omega = (\omega_1 , \omega_2 , \dots , \omega_n )  : \omega_k = 6\}$. The set $B=\displaystyle\bigcup_{k=1}^n A_k$ is the event that at least one roll results in a 6. We must determine 
 \[
 \mathbf{P}\left(B \right) 
 = 
@@ -300,17 +300,17 @@ Suppose that a fair die is rolled once. Let
 
 1. $A$ be the event that an even number is obtained.
 
-2.$B$ be the event that an odd number is obtained.
+2. $B$ be the event that an odd number is obtained.
 
 3. $C$ be the event that a prime number is obtained.
 
 4. $D$ be the event that the number obtained is divisible by 3.
 
-Let $E_k$ be the event that the number `k' is obtained, where $k=1,2, \ldots 6$. Express $E_k$, for $k=1, 2, \ldots 6$ in terms of the events $A$, $B$, $C$ or $D$.
+Let $E_k$ be the event that the number `k' is obtained, where $k=1,2, \dots 6$. Express $E_k$, for $k=1, 2, \dots 6$ in terms of the events $A$, $B$, $C$ or $D$.
 :::
 
 :::{.exercise #dice3}
-Consider rolling a dice $n$ times. The sample space  $\Omega = \{1, 2, \ldots , 6\}^n$ contains $6^n$ sample points. Determine the probability that every roll results in a 6.
+Consider rolling a dice $n$ times. The sample space  $\Omega = \{1, 2, \dots , 6\}^n$ contains $6^n$ sample points. Determine the probability that every roll results in a 6.
 :::
 
 :::{.exercise #integer}
@@ -328,12 +328,12 @@ We have described how probabilities are defined on a sample space when its appro
 
 :::: {.example}
 Suppose a population consists of $n$ individuals, each of whom has one of $k$ possible types. There are
-$n_i$ individuals of type $i$ with $n = n_1 + n_2 + \ldots + n_k$. If an individual is chosen uniformly at random then the probability they are of type $i$ is given by the proportion $p_i = \frac{n_i}{n}$.
+$n_i$ individuals of type $i$ with $n = n_1 + n_2 + \dots + n_k$. If an individual is chosen uniformly at random then the probability they are of type $i$ is given by the proportion $p_i = \frac{n_i}{n}$.
 ::::
 
 
 :::{.solution}
-We may only be concerned with observing the type of the individual chosen and thus represent the experiment with the sample space $\Omega = \{1 , 2 , \ldots , k \}$, where the sample point $i$ corresponds to the outcome that the chosen individual is of type $i$. On this
+We may only be concerned with observing the type of the individual chosen and thus represent the experiment with the sample space $\Omega = \{1 , 2 , \dots , k \}$, where the sample point $i$ corresponds to the outcome that the chosen individual is of type $i$. On this
 sample space we should not use uniform probabilities but rather if $A\subseteq \Omega$  then the probability that $A$
 occurs is the proportion of the population that have the corresponding types and
 \[
@@ -399,7 +399,7 @@ on a collection of subsets of $\Omega$ that satisfies the following properties.
 
 1. For all $A$, for which $\mathbf{P}(A)$ is defined, $0\leq \mathbf{P}(A) \leq 1$. Moreover $\mathbf{P}(\emptyset) = 0$ and $\mathbf{P}(\Omega) = 1$.
 
-2. (Additivity) For a finite or infinite sequence of mutually disjoint events $A_1, A_2 , \ldots,$
+2. (Additivity) For a finite or infinite sequence of mutually disjoint events $A_1, A_2 , \dots,$
 \[
 \mathbf{P} \left( \bigcup_{i=1}^n A_i\right) = \sum_{i=1}^n \mathbf{P} (A_i),
 \]
@@ -410,7 +410,7 @@ and, in the case of an infinite sequence,
 in the finite and infinite cases respectively.
 :::
 
-Recall, the sets $A_1, A_2, \ldots A_n , \ldots$ are mutually disjoint if $A_i  \cap A_j = \emptyset$  whenever $i \neq j$. 
+Recall, the sets $A_1, A_2, \dots A_n , \dots$ are mutually disjoint if $A_i  \cap A_j = \emptyset$  whenever $i \neq j$. 
 
 (We provide some additional comments on this definition in the class footnotes, specifically regarding the
 definition^[
@@ -420,7 +420,7 @@ and additivity^[
 **Some comments on additivity** For a finite or countably infinite sample space additivity implies, by forming
 a sequence from the sample points, that the probability of any event is the sum of the probabilities of the sample points it contains. For an uncountably infinite sample space we cannot make the same argument because we cannot make a sequence of all the sample points in a general event. Additivity for infinite sequences of events is very useful in uncountable sample spaces though. For example it allows us to argue that the area of a disc can be calculated by covering the disc with an infinite sequence of rectangles of decreasing size, and computing the sum of their areas. As an example of additivity failing to hold we can consider the following attempt to define probabilities:
 \[
-\mathbf{P}(A) = \lim_{n\rightarrow \infty} \frac{1}{n} |A \cap \{1, 2, \ldots , n\}|
+\mathbf{P}(A) = \lim_{n\rightarrow \infty} \frac{1}{n} |A \cap \{1, 2, \dots , n\}|
 \]
 for any $A\subseteq \mathbf{N}$ for which the limit exists. This looks like it might define appropriate probabilities for choosing a random number `uniformly from $\mathbf{N}$'--- but such a notion is not useful. Indeed, if we could define such an idea, then if $B_i=\{i\}$, then $\mathbf{P}(B_i)=\mathbf{P}(B_j)$ for any $i$, $j$ (the probability is meant to be uniform). Specifically, $\mathbf{P}(B_i) = \mathbf{P}(B_1)$. Suppose $\mathbf{P}(B_1) =p > 0$. Then for some natural number $n$, additivity implies the probability of the event  that a number between 1 and $n$ is selected must exceed $1$. (Eventually, $np>1$ no matter how small $p$ is.)
 ].)
@@ -455,7 +455,7 @@ For any probability measure the following properties hold. (We assume the probab
 \mathbf{P}(A \cup B) = \mathbf{P}(A) + \mathbf{P}(B) - \mathbf{P}(A \cap B).
 \]
 
-4. For a general sequence of events $A_1 , A_2 , \ldots,$ not necessarily disjoint,
+4. For a general sequence of events $A_1 , A_2 , \dots,$ not necessarily disjoint,
 \[
 \mathbf{P} \left( \bigcup_{i=1}^n A_i \right) \leq \sum_{i=1}^n \mathbf{P} (A_i),
 \]
@@ -492,9 +492,9 @@ $\mathbf{P}(A_1 )$ and $\mathbf{P}(B_1 )$ gives the result.
 
 4. (Taking motivation from definition of $B$ above.) Let $B_1 = A_1$ and then for $k\geq  2$,
 \[
-B_k = A_k \cap (A_1\cup  A_2 \cup \ldots \cup  A_{k-1} )^c
+B_k = A_k \cap (A_1\cup  A_2 \cup \dots \cup  A_{k-1} )^c
 \]
-then $B_1 , B_2 , \ldots$ form a sequence of disjoint events, and $\displaystyle \bigcup_{i=1}^n A_i = \displaystyle \bigcup_{i=1}^n B_i$ , so by additivity
+then $B_1 , B_2 , \dots$ form a sequence of disjoint events, and $\displaystyle \bigcup_{i=1}^n A_i = \displaystyle \bigcup_{i=1}^n B_i$ , so by additivity
 \[
 \mathbf{P}\left(
 \bigcup_{i=1}^n A_i 
@@ -521,7 +521,7 @@ First note that we can count the games that get played by considering the set $\
 which has 45 elements; that is, $\frac{1}{2}(9\times 10)$, the 10 players play 9 games because they do not play themselves. A game between player $i$ and player $j$ has two outcomes (we assume no ties
 here!) and so the sample space contains $2^{45}$ sample points. 
 
-Let $A_i$ denote for $i = 1, 2, \ldots , 10$, the event
+Let $A_i$ denote for $i = 1, 2, \dots , 10$, the event
 that player $i$ wins all their games. A tournament outcome such that $A_i$ occurs consists 9 games where
 the result is determined (player $i$ wins all their games) and 36 games where the result isn't determined. So $|A_i | = 2^{45-9} = 2^{36}$,
 and consequently $\mathbf{P}(A_i ) = \frac{2^{36}}{2^{45}} = 2^{-9}$ . 
@@ -547,18 +547,18 @@ Let $\Omega$ be a sample space of an experiment. Suppose $| \Omega | = n$. Suppo
 
 
 :::{.solution}
-Write $\Omega = \{ \omega_1, \ldots \omega_n \}$. Then $\Omega = \cup_{i=1}^n \{ \omega_i \}$. The properties of a probability measures imply
+Write $\Omega = \{ \omega_1, \dots \omega_n \}$. Then $\Omega = \cup_{i=1}^n \{ \omega_i \}$. The properties of a probability measures imply
 \begin{align*}
 1 &= \mathbf{P} (\Omega) \\
 &= \mathbf{P} \left( \cup_{i=1}^n \{ \omega_i \} \right) \\
 &= \sum_{i=1}^n \mathbf{P}( \{ \omega_i \}) \quad \mbox{using additivity} \\
 &= n\mathbf{P}( \{ \omega \})
 \end{align*}
-Here we have used the fact $\mathbf{P}(\{ \omega_1 \})=\mathbf{P}(\{ \omega_i \})$ for $i=1,2,\ldots, n$. Therefore, 
+Here we have used the fact $\mathbf{P}(\{ \omega_1 \})=\mathbf{P}(\{ \omega_i \})$ for $i=1,2,\dots, n$. Therefore, 
 \[
 \mathbf{P}( \{ \omega_1 \} ) = \frac{1}{n}.
 \]
-Whence, $\mathbf{P}( \{ \omega_i \} ) = \mathbf{P}( \{ \omega_1 \} )= \frac{1}{n} = \frac{1}{| \Omega |}$, for $i=1,\ldots n$.
+Whence, $\mathbf{P}( \{ \omega_i \} ) = \mathbf{P}( \{ \omega_1 \} )= \frac{1}{n} = \frac{1}{| \Omega |}$, for $i=1,\dots n$.
 
 Therefore, $\omega \in \Omega$, $\mathbf{P}(\omega) = \frac{1}{| \Omega |}$.
 :::
@@ -599,11 +599,11 @@ The next proposition generalises the result $\mathbf{P}(A \cup B) = \mathbf{P}(A
 
 :::{.theorem}
 \[
-\mathbf{P} \left( \bigcup_{i=1}^{n} A_i\right) = P_1 - P_2 + P_3 - \ldots + (-1)^{n+1}P_n
+\mathbf{P} \left( \bigcup_{i=1}^{n} A_i\right) = P_1 - P_2 + P_3 - \dots + (-1)^{n+1}P_n
 \]
 where for $1\leq k \leq n$
 \[
-P_k = \sum_{1\leq i_1 < i_2 < \ldots < i_k \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap \ldots \cap A_{i_k}) 
+P_k = \sum_{1\leq i_1 < i_2 < \dots < i_k \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap \dots \cap A_{i_k}) 
 \]
 :::
 
@@ -618,30 +618,30 @@ gives
 \end{align*}
 Now apply the induction hypothesis; that is, the inclusion-exclusion formula for the union of $n$ event to expand the first and third terms 
 \[
-\mathbf{P} \left( \bigcup_{i=1}^{n} A_i\right) = P_1 - P_2 + P_3 - \ldots + (-1)^{n+1}P_n
+\mathbf{P} \left( \bigcup_{i=1}^{n} A_i\right) = P_1 - P_2 + P_3 - \dots + (-1)^{n+1}P_n
 \]
 and
 \[
 \mathbf{P} \left(\bigcup_{i=1}^{n} (A_i \cap A_{n+1}) \right)
-= Q_1 - Q_2 + Q_3 - \ldots + (-1)^{n+1} Q_n
+= Q_1 - Q_2 + Q_3 - \dots + (-1)^{n+1} Q_n
 \]
 where 
 \[
 Q_k =
-\sum_{1\leq i_1 < i_2 < \ldots < i_k \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap \ldots \cap A_{i_k} \cap A_{n+1}) 
+\sum_{1\leq i_1 < i_2 < \dots < i_k \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap \dots \cap A_{i_k} \cap A_{n+1}) 
 \]
 Now observe that,
 \[
 P_1 + \mathbf{P}(A_{n+1}) = \sum_{i=1}^{n+1} \mathbf{P} (A_i),
 \]
-and that for $k = 2, 3, \ldots , n$
+and that for $k = 2, 3, \dots , n$
 \[
 P_k + Q_{k-1} =
-\sum_{1\leq i_1 < i_2 < \ldots < i_k \leq n+1} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap \ldots \cap A_{i_k} ) 
+\sum_{1\leq i_1 < i_2 < \dots < i_k \leq n+1} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap \dots \cap A_{i_k} ) 
 \]
 and finally that
 \[
-Q_n = \mathbf{P}(A_1 \cap A_2 \ldots  \cap  A_{n+1} )
+Q_n = \mathbf{P}(A_1 \cap A_2 \dots  \cap  A_{n+1} )
 \]
 and we have obtained the inclusion-exclusion formula for the union $\displaystyle \bigcup_{i=1}^{n+1} A_i$.
 :::
@@ -651,7 +651,7 @@ and we have obtained the inclusion-exclusion formula for the union $\displaystyl
 We finish with some examples that apply the inclusion-exclusion formula.
 
 :::{.example}
-An integer is selected at random from the set $\{ 1, 2, \ldots , 100 \}$. Assume that all numbers are equally likely to be selected.
+An integer is selected at random from the set $\{ 1, 2, \dots , 100 \}$. Assume that all numbers are equally likely to be selected.
 
 1. Determine the probability that the selected number is a multiple of 4 or 5 or 7.
 
@@ -798,7 +798,7 @@ b. If all four players play together, determine the probabilities of each one wi
 :::
 
 :::{.exercise #cardcollection}
-Consider a collection of cards whose faces are labelled $1, 2, \ldots, m$. The cards are shuffled and then spread in a row across a table. Shuffling the cards means we can assume that any card is equally likely to be in any position in the row of cards. 
+Consider a collection of cards whose faces are labelled $1, 2, \dots, m$. The cards are shuffled and then spread in a row across a table. Shuffling the cards means we can assume that any card is equally likely to be in any position in the row of cards. 
 
 Determine the probability that at least one card is in the same position as the number on its face.
 :::
