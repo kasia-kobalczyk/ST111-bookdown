@@ -534,4 +534,383 @@ f(k_1) = {k\choose k_1} \prod_{i=1}^{k_1} \frac{ n_1 -k + i }{n - k_1 + i} \prod
 \approx {k\choose k_1} p^{k_1} (1-p)^{k - k_1}.
 \]
 
+## Chapter 3 {-}
+
+### Solutions to [Class 7 Exercises] {-}
+
+#### Solution to Exercise\ \@ref(exr:balls) {-}
+
+Let R be the event that the selected ball is red, and let Y be the event that the selected ball is yellow. We want to compute the probability of the event Y given that the event R did not occur. Hence,
+\[
+\mathbf{P}( R | R^c) = \frac{ \mathbf{P}( R \cap R^c )}{\mathbf{P}(R^c)} = \frac{ \mathbf{P}(R) }{ \mathbf{P}(R^c) } = \frac{ \frac{5}{30} }{ \frac{20}{30} } = \frac{5}{20} = \frac{1}{4}.
+\]
+
+#### Solution to Exercise\ \@ref(exr:myson) {-}
+Let $A$ be the event the first four batteries are good and $B$ be the event the fifth battery is bad. We want to compute $\mathbf{P}( B | A) = \frac{ \mathbf{P}(A \cap B) }{\mathbf{P} (A) }.$
+
+Computing
+\[
+\mathbf{P}(A \cap B) = \frac{ 10 \times 9 \times 8 \times 7 \times 3}{13\times 12 \times 11 \times 10 \times 9}.
+\]
+\[
+\mathbf{P}(A) = \frac{ 10 \times 9 \times 8 \times 7}{13\times 12 \times 11 \times 10}.
+\]
+Therefore,
+\[
+\mathbf{P}( B | A) = \frac{ \mathbf{P}(A \cap B) }{\mathbf{P} (A) } = \frac{3}{9}.
+\]
+
+#### Solution to Exercise\ \@ref(exr:box46) {-}
+Define the events:
+\begin{align*}
+R_i &= \{\mbox{red ball drawn in the ith draw}\},  \\
+G_i &= \{\mbox{green ball drawn in the ith draw}\}.
+\end{align*}
+
+1. Computing
+\[
+\mathbf{P} ( (R_1 \cap G_2 ) \cup (G_1 \cap R_2 ) = \frac{6\times4}{10\times 9} + \frac{6\times 4}{10 \times 9} = \frac{48}{90} = \frac{8}{15}.
+\]
+
+2. We have
+\[
+\mathbf{P}(3\mbox{ draws}) = \mathbf{P}( (R_1 \cap R_2 \cap G_3) \cup (G_1 \cap G_2 \cap R_3)) = \frac{4\times 3 \times 5}{10\times 9 \times 8} + \frac{6\times 5\times 4}{10 \times 9 \times 8} = \frac{6\times 4\times 8}{10 \times 9 \times 8} = \frac{4}{15}.
+\]
+Next 
+\[
+\mathbf{P}(2\mbox{ draws}) = \mathbf{P}( (R_1 \cap G_2) \cup (G_1 \cap R_2)) = \frac{8}{15}
+\]
+from part 1. Hence,
+\[
+\mathbf{P}(\mbox{2 or 3 draws}) = \mathbf{P}(\mbox{2 draws}) + \mathbf{P}(\mbox{3 draws}) = \frac{8}{15} + \frac{4}{15} = \frac{12}{15} = \frac{4}{5}.
+\]
+
+3. We want to compute $\mathbf{P}(\mbox{3 draws} | (R_1 \cap R_2 ) \cup (G_1 \cap G_2 ))$. Note that $\{\mbox{3 draws} \} \subseteq (R_1 \cap R_2 ) \cup (G_1 \cap G_2)$.
+Hence, by the definition of conditional probability,
+\begin{align*}
+\mathbf{P}(\mbox{3 draws} | (R_1 \cap R_2 ) \cup (G_1 \cap G_2 )) &=
+\frac{ \mathbf{P}(\mbox{3 draws} \cap ( (R_1 \cap R_2 ) \cup (G_1 \cap G_2 )) ) }{\mathbf{P}( (R_1 \cap R_2 ) \cup (G_1 \cap G_2 )) } \\
+&= \frac{ \mathbf{P}(\mbox{3 draws} ) }{\mathbf{P}( (R_1 \cap R_2 ) \cup (G_1 \cap G_2 )) } \\
+&= \frac{ \frac{4}{15} }{\frac{4\times 3}{10\times 9} + \frac{6\times 5}{10 \times 9}} \\
+&= \frac{ \frac{4}{15} }{ \frac{42}{90} } \\
+&= \frac{12}{21} \\
+&= \frac{4}{7}.
+\end{align*}
+
+#### Solution to Exercise\ \@ref(exr:shopkeeper) {-}
+1. Let the keys be numbered from 1 to $n$. We can choose and order $k$ keys out
+of $n$ in ${n \choose k} k!$ ways. In order to have first $k - 1$ keys which do not open the door and then the key that opens the door, we choose $k - 1$ keys out of $n - 1$ that do not open the door in ${n - 1 \choose k - 1}$ ways, and order them in $(k - 1)!$ ways. Furthermore we choose the key that opens the door in ${1 \choose 1}$ way.
+Thus, the required probability is equal to
+
+\[
+\frac{ {n - 1 \choose k - 1} (k-1)! {1\choose 1} }{ {n \choose k }k! } = \frac{ (n - 1)! }{n!}= \frac{1}{n}.
+\]
+
+2. This is sampling with replacement and the probability is
+\[
+\frac{ (n - 1)^{k-1} }{n^k}.
+\]
+
+#### Solution to Exercise\ \@ref(exr:paradox) {-}
+Consider a randomly chosen male applicant. Let $A_1$ be event that they apply to science, $A_2$ be the
+event that they apply to humanities and $B$ be the event that their application is successful. The law of
+total probability states that
+\[
+\mathbf{P}(B) = \mathbf{P}(A_1 ) \times \mathbf{P}(B|A_1) + \mathbf{P}(A_2 ) \times \mathbf{P}(B|A_2 )
+\]
+With the information that 75\% of men applied to sciences information the law of total probability reads
+\[
+0.6 = 0.75 \times 0.7 + 0.25 \times 0.3
+\]
+Only 25\% of female applicants were to Science. The corresponding law of total probability for women
+reads
+\[
+0.5 = 0.25 \times 0.8 + 0.75 \times 0.4
+\]
+The explanation for the initial paradox is that women are tending to apply to the faculty which is more
+selective.
+
+### Solutions to [Class 8 Exercises] {-}
+
+#### Solution to Exercise\ \@ref(exr:cardsinbag) {-}
+We sketch the answer using a variety of different approaches, you should formalise the approach that fits your particular tastes.
+
+Let $B$ denote a black card face and $W$ a white card face. Note that the probability of selecting any card is $\dfrac{1}{3}$. Further note that the probability that the BB card has B on the other side is 1, the probability that the WW card has B on the other side is 0 and the probability that the WB card shows B is $\frac{1}{2}$.
+
+1. Bayes' theorem implies that
+\[
+\mathbf{P}(BB\mid \mbox{see B}) = \frac{ \mathbf{P}( \mbox{see B} \mid BB) \times \frac{1}{3}}{\mathbf{P}(\mbox{see B}\mid BB) \frac{1}{3} + \mathbf{P}(\mbox{see B}\mid WW) \frac{1}{3} + \mathbf{P}(\mbox{see B}\mid WB) \frac{1}{3} } = \frac{1}{1 + 0 +\frac{1}{2}} = \frac{2}{3}.
+\]
+2. The colours are actually not important and the problem is symmetric under colour permutation. Indeed, the colour that the displayed side is the same as the hidden side is $\dfrac{2}{3}$ (WW, BB  from three cards). To formalise this approach use the law of total probability.
+3. Since the card with two white faces was not drawn, the probability of seeing a black face is $\dfrac{3}{4}$ (There are four faces with three black faces). The probability of seeing a black face and having drawn the BB card is $\dfrac{1}{2}$. Therefore, the required probability is
+\[
+\frac{\frac{1}{2}}{\frac{3}{4}} = \frac{2}{3}.
+\]
+Note, this problem is famous for demonstrating difficulties with conditional probability. Countless experiments demonstrate psychological  problems processing the given information with many people providing the answer $\dfrac{1}{2}$. 
+
+
+#### Solution to Exercise\ \@ref(exr:events) {-}
+
+1. If $A$ and $B$ are disjoint, then $\mathbf{P}(A \cap B ) = 0$, but $\mathbf{P}(A)\mathbf{P}(B) > 0$. So, the events are not independent.
+
+2. If $A$ and $B$ are independent, then $\mathbf{P}( A \cap B)= \mathbf{P}(A)\mathbf{P}(B) >0$. If $A$ and $B$ were disjoint, then $A\cap B = \emptyset$ and $\mathbf{P}(A \cap B) = 0$, which is a contradiction.
+
+
+#### Solution to Exercise\ \@ref(exr:eventsabc) {-}
+Computing we have
+\begin{align*}
+\mathbf{P}(A \cap (B \cup C)) 
+&= 
+\mathbf{P}( (A \cap B) \cup (A \cap C) ) \quad \mbox{Distributive law for set} \\
+&= 
+\mathbf{P}( A \cap B ) + \mathbf{P} (A \cap C) - \mathbf{P}(A \cap B \cap C) \quad \mbox{Using inclusion-exclsuion} \\
+&= \mathbf{P}(A)\mathbf{P}(B) + \mathbf{P}(A)\mathbf{P}(C) - \mathbf{P}(A)\mathbf{P}(B)\mathbf{P}(C) \quad \mbox{Since }A, B, C \mbox{ are independent.} \\
+&= \mathbf{P}(A) \left( \mathbf{P}(B) + \mathbf{P}(C) - \mathbf{P}(B)\mathbf{P}(C) \right) \\
+&= \mathbf{P}(A) \left( \mathbf{P}(B) + \mathbf{P}(C) - \mathbf{P}(B \cap C) \right) \\
+&= \mathbf{P}(A)\mathbf{P}(B \cup C)\quad \mbox{Using inclusion-exclsuion} 
+\end{align*}
+
+#### Solution to Exercise\ \@ref(exr:tossn) {-}
+&nbsp;
+
+1. When $n=3$ we have
+\[
+\mathbf{P}(A) = \mathbf{P}(\mbox{exactly two heads}) + \mathbf{P}(\mbox{exactly three heads}) = \frac{3}{8} + \frac{1}{8} = \frac{1}{2},
+\]
+and
+\[
+\mathbf{P}(B) = \mathbf{P}(\mbox{exactly one tail}) + \mathbf{P}(\mbox{exactly two tails}) = \frac{3}{8} + \frac{3}{8} = \frac{3}{4}.
+\]
+Furthermore,
+\[
+\mathbf{P}(A \cap B) = \mathbf{P}(\mbox{two heads and one tail}) = \frac{3}{8}.
+\]
+Since $\mathbf{P}(A)\mathbf{P}(B) = \frac{1}{2} \times \frac{3}{4} = \frac{3}{8} = \mathbf{P}(A \cap B)$, it follows that $A$ and $B$ are independent.
+
+2.When $n=4$ we have 
+\[
+\mathbf{P}(A) = \mathbf{P}(\mbox{exactly two heads}) + \mathbf{P}(\mbox{exactly three heads}) + \mathbf{P}(\mbox{exactly four heads})= \frac{6}{16} + \frac{4}{16} + \frac{1}{16}= \frac{11}{16},
+\]
+and
+\[
+\mathbf{P}(B) = \mathbf{P}(\mbox{exactly one tail}) + \mathbf{P}(\mbox{exactly two tails}) = \frac{4}{16} + \frac{6}{16} = \frac{10}{16} = \frac{5}{8}.
+\]
+Further,
+\[
+\mathbf{P}(A \cap B) = \mathbf{P}(\mbox{three heads and one tail}) + \mathbf{P}(\mbox{two heads and two tails})= \frac{4}{16} + \frac{6}{16} = \frac{5}{8}.
+\]
+Since $\mathbf{P}(A)\mathbf{P}(B) = \frac{11}{16} \times \frac{5}{8} \neq \frac{5}{8} = \mathbf{P}(A \cap B)$, it follows that $A$ and $B$ are not independent.
+
+#### Solution to Exercise\ \@ref(exr:suitable) {-}
+We need to show 
+
+1. for all $A$ for which $\mathbf{P}_B$ is defined, $0\leq \mathbf{P}_B(A) \leq a$ and that $\mathbf{P}_B(\emptyset) = 0$ and $\mathbf{P}_B(\Omega) = 1$.
+
+2. For a finite or infinite sequence of mutally disjoint events $A_1$, $A_2$, \ldots
+\[
+\mathbf{P}_B\left( \bigcup_{i=1}^n A_i \right) = \sum_{i=1}^n \mathbf{P}_B(A_i).
+\]
+with the similar statement for a countably infinite sequence.
+
+1. Let $A$ be an event. Then $A\cap B$ is also an event and $\mathbf{P}(A \cap B)\geq 0$. Hence,
+\[
+\mathbf{P}_B (A) = \mathbf{P}(A|B) = \frac{ \mathbf{P}(A \cap B) }{\mathbf{P}(B)} \geq 0.
+\]
+Since $A \cap B \subset B$, it follows since $\mathbf{P}$ is a probability measure that $\mathbf{P}(A \cap B) \leq \mathbf{P}(B)$. Hence, $\mathbf{P}_B (A) \leq 1$. Further
+\[
+\mathbf{P}_B (\Omega) = \mathbf{P}(\Omega|B) = \frac{ \mathbf{P}(\Omega \cap B) }{\mathbf{P}(B)} = \frac{ \mathbf{P}( B) }{\mathbf{P}(B)} = 1.
+\]
+Finally, 
+\[
+\mathbf{P}_B (\emptyset) = \mathbf{P}(\emptyset|B) = \frac{ \mathbf{P}(\emptyset \cap B) }{\mathbf{P}(B)} = \frac{ \mathbf{P}( \emptyset) }{\mathbf{P}(B)} = 0.
+\]
+This verifies the conditions in part 1.
+
+2. (We prove the finite case directly which generalises to the infinite case by using countable additivity. ) Let $A_1, A_2, \ldots$ be a sequence of mutally disjoint events. Then 
+\begin{align*}
+\mathbf{P}_B \left( \bigcup_{i=1}^n A_i \right) 
+&= 
+\mathbf{P} \left( \bigcup_{i=1}^n A_i \mid B \right) \\
+&=
+\frac{ \mathbf{P}\left( (\bigcup_{i=1}^n A_i) \cap B  \right )}{\mathbf{P}(B) } \\
+&=
+\frac{ \mathbf{P}\left( (\bigcup_{i=1}^n A_i \cap B)  \right )}{\mathbf{P}(B) } \\
+\end{align*}
+Since the events $A_i$, $i= 1, \ldots n$ are disjoint, it follows that $(A_i \cap B)$ $i= 1, \ldots n$ are disjoint. Hence, by additivity
+\[
+\mathbf{P}\left( \bigcup_{i=1}^n (A_i \cap B) \right)= \sum_{i=1}^n \mathbf{P}(A_i \cap B),
+\]
+which implies
+\[
+\mathbf{P} \left( \bigcup_{i=1}^n A_i \mid B \right) = \frac{\sum_{i=1}^n \mathbf{P}(A_i \cap B) }{\mathbf{P}(B)} = \sum_{i=1}^n \frac{ \mathbf{P}(A_i \cap B)}{\mathbf{P}(B)}.
+\]
+Since $\mathbf{P}(B)>0$ we can use the definition of conditional probability to get
+\[
+\mathbf{P}_B \left( \bigcup_{i=1}^n A_i \right) 
+=
+\mathbf{P}\left( \bigcup_{i=1}^n A_i \mid B \right)
+=
+\sum_{i=1}^n \frac{ \mathbf{P}(A_i \cap B)}{\mathbf{P}(B)}
+=
+\sum_{i=1}^n \mathbf{P}(A_i|B)
+=
+\sum_{i=1}^n \mathbf{P}_B(A_i).
+\]
+where we have used the defintion of conditional probability $\frac{ \mathbf{P}(A_i \cap B)}{\mathbf{P}(B)} = \mathbf{P}(A_i|B)$.
+
+### Solutions to [Class 9 Exercises] {-}
+
+#### Solution to Exercise\ \@ref(exr:biasgame) {-}
+Consider the experiment where the coin is tossed $n$ times. Let $\Omega \subseteq \mathbf{Z}^n$ be such that each $\omega \in \Omega$ is a sequence of integers that record how the counter moves. For example, if $n=4$, then $(1,2,3,4)$ is an element of $\Omega$. Let $X^n_p$ be the event that $\omega_n = p$; that is, after $n$ tosses the counter is located at $p$. That is,  $X_n = \{ \omega = (\omega_1, \ldots, \omega_{n-1}, p ) \}$. 
+
+1. We require $\mathbf{P}(X^4_{-2})$ that is the probability that after 4 steps the counter finishes at $-2$. Starting at $0$ to finish at $-2$ in 4 moves requires 3 negative steps and 1 positive step; that is, $-2 = -1 - 1 -1 + 1$, with this the unique decomposition of $-2$ into four unit integers. There are ${4 \choose 1}$ ways to achieve this, therefore
+\[
+\mathbf{P}(X^4_{-2}) = {4 \choose 1}pq^3.
+\]
+
+2. We require $\mathbf{P}(X^6_{-3})$. Let $i\in\mathbf{Z}$ be the number of "heads" and $j\in\mathbf{Z}$ be the number of "tails". The total number of moves is 6, so $i+j=6$. Since each "head" results in a move $n\mapsto n+1$ and each "tail" produces a move $n\mapsto n-1$ and the counter must finish on $-3$ we also have $i-j = -3$. But there are no integer solutions, so $\mathbf{P}(X^6_{-3})=0$. (Note in general making an even number of moves cannot result in the counter finishing on an integer with different parity.) 
+
+Note, once we can talk about random variables, this question's notation becomes easier. 
+
+#### Solution to Exercise\ \@ref(exr:biasgame) {-}
+Consider the experiment where the coin is tossed $n$ times. Let $\Omega \subseteq \mathbf{Z}^n$ be such that each $\omega \in \Omega$ is a sequence of integers that record how the counter moves. For example, if $n=4$, then $(1,2,3,4)$ is an element of $\Omega$. Let $X^n_p$ be the event that $\omega_n = p$; that is, after $n$ tosses the counter is located at $p$. That is,  $X_n = \{ \omega = (\omega_1, \ldots, \omega_{n-1}, p ) \}$. 
+
+1. We require $\mathbf{P}(X^4_{-2})$ that is the probability that after 4 steps the counter finishes at $-2$. Starting at $0$ to finish at $-2$ in 4 moves requires 3 negative steps and 1 positive step; that is, $-2 = -1 - 1 -1 + 1$, with this the unique decomposition of $-2$ into four unit integers. There are ${4 \choose 1}$ ways to achieve this, therefore
+\[
+\mathbf{P}(X^4_{-2}) = {4 \choose 1}pq^3.
+\]
+
+2. We require $\mathbf{P}(X^6_{-3})$. Let $i\in\mathbf{Z}$ be the number of "heads" and $j\in\mathbf{Z}$ be the number of "tails". The total number of moves is 6, so $i+j=6$. Since each "head" results in a move $n\mapsto n+1$ and each "tail" produces a move $n\mapsto n-1$ and the counter must finish on $-3$ we also have $i-j = -3$. But there are no integer solutions, so $\mathbf{P}(X^6_{-3})=0$. (Note in general making an even number of moves cannot result in the counter finishing on an integer with different parity.) 
+
+Note, once we can talk about random variables, this question's notation becomes easier. 
+
+#### Solution to Exercise\ \@ref(exr:gambler) {-}
+
+1. The event $F_{m,k}$ is not quite the complement of $E_{m,k}$ because the wealth of the gambler could in principle oscillate forever between the values of $1$ and $m - 1$.
+
+2. Note that the probability the gambler could in principle oscillate forever between the values of $1$ and $m - 1$ has
+probability zero.
+   Since $\mathbf{P}(F_{m,k}) + \mathbf{P}(E_{m , k}) = 1$, and
+\begin{equation}
+\mathbf{P}(F_{m,k}) =
+\left\{
+\begin{array}{lcl}
+\dfrac{m-k}{m} & & p = \frac{1}{2}, \\
+&& \\
+\dfrac{\left( \frac{1-p}{p}\right)^m - \left( \frac{1-p}{p} \right)^k}{\left( \frac{1-p}{p}\right)^m -1} & & \mbox{otherwise}
+\end{array}
+\right.
+(\#eq:GRruin)
+\end{equation}
+
+3. The relation $F_{m,k} \subseteq F_{m+1,k}$ holds because if a gambler is ruined before their wealth ever reaches $m$
+then they necessarily are ruined before reaching a wealth of $m + 1$. 
+
+4. Let
+\[
+F_k = \bigcup_{m\geq k} F_{m,k},
+\]
+this is the event that gambler is _ever_ ruined if they play indefinitely. 
+
+5. Using $\mathbf{P}(F_k ) = \lim_{m\rightarrow \infty} \mathbf{P}(F_{m,k})$, and taking limits in \@ref(eq:GRruin) gives
+\[
+\mathbf{P}(F_k ) =
+\left\{
+\begin{array}{lcl}
+1 & & p \leq \frac{1}{2}, \\
+&& \\
+\left( \frac{1-p}{p} \right)^k & & p > \frac{1}{2}
+\end{array}
+\right.
+\]
+That is, in a game that is fair ($p=\frac{1}{2}$) or bias against the gambler, the probability of being ruinned if they play indefinitely is 1.
+
+
+### Solutions to [Chapter 3 Consolidation Questions]
+
+
+#### Solution to Exercise\ \@ref(exr:genes) {-}
+
+1. Let $\Omega = \{(1,1), (1,2), (2,1), (2,2) \}^4$ where $(i,j)$ denotes the gene types for the first and second gene, respectively. Each element $\omega\in \Omega$ provides the gene type for one of the four children. For example, $( (1,1), (1,1), (1,2), (2,2))$ states the first and second child both have both genes of type 1 an so on. Note that $|\Omega| = 256 = 4^4$. Let $A$ be the event that two children both have two genes of type 1 and two children have two genes of type 2. The number of elements in $A$ is
+\[
+\frac{4!}{2!2!} = 6.
+\] 
+Therefore, 
+\[
+\mathbf{P}(A) = \frac{6}{256} = \frac{3}{128}.
+\]
+
+2. Label the parents $P_1$ and $P_2$ with $P_1$ the parent we know has one gene of type 1 and one gene of type 2. Let $B_{ij}$ be the event that parent $P_2$ has one gene of type $i$ and one gene of type $j$. Let $C$ be the event that the child has two genes of type 1. Using Bayes' formula (and simplifying the conditional probabilities) gives
+\[
+\mathbf{P}(B\mid C) = \frac{ \mathbf{P} ( B_{12} \cap C) }{\mathbf{P}( B_{11} \cap C) + \mathbf{P}( B_{12} \cap C) } = \frac{0.18 \times 0.25}{0.18\times 0.25 + 0.81\times 0.5} = \frac{1}{10}.
+\]
+
+#### Solution to Exercise\ \@ref(exr:clothing) {-}
+The following sketches the key points from a potential solution.
+
+1. The probability is
+\[
+\frac{1}{7} 
+\left( \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{4} \right) + \frac{6}{7} \left( \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{2} \times \frac{1}{4} \right) = \frac{22}{504} + \frac{114}{504}.
+\]
+the first bracket being the probability of wearing the black shirt on Sunday. We now require Bayes' Theorem
+\[
+P(A|B) = \frac{P(A\cap B)}{P(B)}.
+\]
+So the probability that it is Sunday, given that I am wearing my black shirt, is therefore by Bayes' Theorem
+\begin{eqnarray*}
+P(\mbox{Sunday}|\mbox{Wearing black shirt})
+&=& 
+\frac{P( \mbox{Sunday and wearing black shirt})}{P(\mbox{wearing black shirt})} \\
+&=& \frac{\frac{22}{504}}{ \frac{22}{504} + \frac{114}{504}} \\
+&=& \frac{22}{22+114} \\
+&=& \frac{11}{68}.
+\end{eqnarray*}
+
+2. For the second part, consider Mondays separately. The new probability that I am wearing my black shirt is (Monday represented by the last bracket)
+\[
+\frac{1}{7} \left( \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{4} \right) + \frac{5}{7} 
+\left( \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{3} + \frac{1}{3} \times \frac{1}{2} \times \frac{1}{4} \right) + \frac{1}{7} \left( \frac{1}{2} \times \frac{1}{4}\right) = \frac{22}{504} + \frac{95}{504} + \frac{9}{504}.
+\]
+The probability that it is Sunday, given that I am wearing my black shirt, is now (using Bayes' Theorem again in the same manner as above. 
+\[
+\frac{22}{22+95+9} = \frac{11}{63}.
+\]
+
+#### Solution to Exercise\ \@ref(exr:randomsol) {-}
+There are multiple solutions to this problem.
+
+1. Let $\Omega$ be the sample space. This consists of all triples $(x,y,z)$ that satisfy $x+y+z=20$. Firstly, count the total number of solutions; that is $|\Omega|$. For a given $x$, the solution pairs $(y,z)$ have the form $(0,20-x), (1,20-x-1),\ldots, (20-k,0)$. That is, there are $21-x$ different solutions for a fixed $x$. But $0\leq x \leq 20$, each of which generates $21-x$ solutions. This gives a total of
+\[
+\sum_{i=0}^{20} (21 - i) = 21\times 11 = 231
+\]
+solutions. So $|\Omega| = 231$.
+
+Let $X_1$ be the event that $x$ is divisible by 5. Suppose $x$ is divisible by 5, then $x=0,5,10,15,20$. The number of solutions for which $x=5$ is then 
+\[
+(21 - 0) + (21 - 5) + (21 - 10) + (21 - 15) + (21 - 20) = 55.
+\]
+and 
+\[
+\mathbf{P}(X_1) = \frac{55}{21\times 11} = \frac{5}{21}.
+\]
+
+2. No they are not independent event, we have seen that $y$'s value depends on $x$'s. Or to put it another way, the probability that $y=20$ given that we know $x=20$ is zero, which is not the same as the probability that $y=20$ in any randomly selected solution.
+
+#### Solution to Exercise\ \@ref(exr:gameround) {-}
+Let $\Omega=\{ n \in \mathbf{Z}\mid n\geq 0\}$. Let $E_n$ be the event you reach $n$ points starting with 0 points. Following the arguments for the gambler's ruin problem gives
+\[
+\mathbf{P}(E_n)  = \frac{1}{2}\mathbf{P}(E_{n-1}) + \frac{1}{2}\mathbf{P}(E_{n-2})
+\]
+Let $p(n) = \mathbf{P}(E_n)$, then we get $p_n - \frac{1}{2}p_{n-1} - \frac{1}{2}p_{n-2} = 0$. Using the method given in the notes gives the general solution
+\[
+p(n) = C_1 + C_2\left( - \frac{1}{2} \right)^n.
+\]
+The situations permits determination of $p(1)$ and $p(2)$. Note that $p(1) = \dfrac{1}{2}$. Have a score of 2 arises in two ways, either you score 2 points directly, or you score 1 point twice. Thus, $p(2) = \dfrac{1}{2} + \dfrac{1}{2}\times\dfrac{1}{2} = \dfrac{3}{4}$. Using these conditions gives $C_1= \dfrac{2}{3}$ and $C_2 = \dfrac{1}{3}$. Therefore,
+\[
+p(n) = \frac{2}{3} + \frac{1}{3}\left( - \frac{1}{2} \right)^n
+\]
+Note that for large $n$, $p(n) \approx \dfrac{2}{3}$, what do you think this means?
+
+
 
