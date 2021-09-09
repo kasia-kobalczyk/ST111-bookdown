@@ -913,4 +913,326 @@ p(n) = \frac{2}{3} + \frac{1}{3}\left( - \frac{1}{2} \right)^n
 Note that for large $n$, $p(n) \approx \dfrac{2}{3}$, what do you think this means?
 
 
+## Chapter 4 {-}
 
+### Solutions to [Class 10 Exercises] {-}
+
+#### Solution to Exercise\ \@ref(exr:seeds) {-}
+
+1. Let $X$ denote the number of seeds out of 6 seeds planted that will germinate.
+We want to compute $\mathbf{P}(X \geq 2)$. Observe that $X$ has binomial distribution with parameters $n=6$ and $p = \dfrac{2}{3}$. Hence,
+\[
+\mathbf{P}(X = k) = {6 \choose k}\left( \frac{2}{3} \right)^k\left( \frac{1}{3} \right)^{6 - k}.
+\]
+for $k=0,\ldots 6$. It follows that
+\begin{align*}
+\mathbf{P}(X \geq 2) &= 1 - \mathbf{P}(X = 0) - \mathbf{P}(X = 1) \\
+&= 1 - \left( \frac{1}{3} \right)^6 - 6 \left( \frac{2}{3} \right)\left( \frac{1}{3} \right)^5 \\
+&= 1 - \frac{1}{3^6} - \frac{12}{3^6} \\
+&= \frac{716}{729}
+\end{align*}
+
+2. By the definition of conditional probability and by additivity of conditional probabilities 
+\[
+\mathbf{P}(X \leq  5 |X \geq 3) = 1 - \mathbf{P}(X = 6 |X \geq 3) = 1 - \frac{\mathbf{P}(X = 6, X \geq 3)}{\mathbf{P}(X \geq 3)} =
+1 - \frac{ \mathbf{P}(X = 6)}{\mathbf{P}(X \geq 3)}.
+\]
+Since
+
+\begin{align*}
+\mathbf{P}(X \geq 3) &= \mathbf{P}(X = 3) + \mathbf{P}(X = 4) + \mathbf{P}(X = 5) + \mathbf{P}(X = 6) \\
+&=
+{6 \choose 3} \left( \frac{2}{3} \right)^3 \left( \frac{1}{3} \right)^3
++
+{6 \choose 4} \left( \frac{2}{3} \right)^4 \left( \frac{1}{3} \right)^2
++
+{6 \choose 5} \left( \frac{2}{3} \right)^5 \left( \frac{1}{3} \right)^1
++
+\left( \frac{2}{3} \right)^6 \\
+&= \frac{656}{3^6}.
+\end{align*}
+it follows that
+\begin{align*}
+\mathbf{P}(X \leq 5 | X \geq 3) &= 1 - \frac{ \mathbf{P}(X = 6) }{\mathbf{P}(X \geq 3) } \\
+&= 1 - \frac{ \left( \frac{2}{3} \right)^6 }{ \frac{656}{3^6} } \\
+&= 1 - \frac{64}{656} \\
+&= 1 - \frac{4}{41} \\
+&= \frac{37}{41}.
+\end{align*}
+
+#### Solution to Exercise\ \@ref(exr:tables) {-}
+Let $X$ be a random variable that denotes the number of people out of 52 who reserved a table at the restaurant and do not show up. Then $X$ is a binomial random variable with parameters $n=52$ and $p=0.2$. The restaurant will be able to accommodate everyone if two or more people who reserved a table at the restaurant do not show up, that is if $\{X \geq 2\}$. Hence, the probability that the restaurant will be able to accommodate everyone is equal to
+\[
+\mathbf{P}(X \geq 2) = 1 - \mathbf{P}(X = 0) - \mathbf{P}(X = 1) = 1 - (0.8)^{52} - 52\times 0.2 \times (0.8)^{51}.
+\]
+
+
+### Solutions to [Class 11 Exercisses] {-}
+
+#### Solution to Exercise\ \@ref(exr:gamblingvariant) {-}
+Let $X$ be the number of times we win in $n$ games then our final wealth is given by 
+\[
+(1 + 2\alpha)^X (1 - \alpha)^{n - X} = (1 - \alpha)^n \left( \frac{1 + 2 \alpha}{1 - \alpha} \right)^X.
+\]
+We know from the weak law of large numbers that for any $\varepsilon > 0$, with probability tending to one that $X$ belongs to the interval $[n(p - \varepsilon), n(p + \varepsilon)]$. Consequently with high probability the wealth will be close to
+\[
+(1 + 2 \alpha)^{np} (1 - \alpha )^{n (1 - p)}
+\]
+Thus to maximize the growth rate we need to maximize 
+\[
+(1 + 2 \alpha)^{p} (1 - \alpha )^{(1 - p)}
+\]
+Taking logarithms and looking for a turning point gives the condition
+\[
+\frac{2p}{1 + 2\alpha} - \frac{1-p}{1-\alpha} = 0.
+\]
+For $p = 2/3$, the unique solution (and hence the unique turning point, which must be a maximum) is $\alpha= 1/2$.
+
+### Solutions to [Class 12 Exercisses] {-}
+
+#### Solution to Exercise\ \@ref(exr:unitsquares) {-}
+1. Each route from $(0,0)$ to $(n,n)$ travels along $2n$ edges, exactly $n$ of these are parallel to the $x$ (or $y$) axis. Hence, from $2n$ edges we must choose $n$, giving ${2n \choose n}$ routes.
+
+2.
+    (i) Starting from $(0,0)$ we move to $(k, n-k)$ and then move from $(k, n - k)$ to $(n,n)$. Using the same reasonsing as part (1), there are ${n \choose k}$ routes from $(0,0)$  to $(k, n-k)$ and then ${n \choose k}$ routes from $(k, n - k)$ to $(n,n)$. The multiplication rule implies there are ${n \choose k}^2$. 
+    (ii) Forming the sum over $k$ gives the total number of routes from $(0,0)$ to $(n,n)$, therefore, using the result from part (i), we get
+    \[
+\sum_{k=0}^{n}\left(\frac{n !}{k !(n-k) !}\right)^{2} = {2n \choose n}.
+\]
+3. Suppose $E_{n,k}$ is the event that a random path on the $n\times n$ board passes through $(k,n-k)$. Then 
+\[
+E_n = \bigcup_{|2k -n|<n/100} E_{n,k}.
+\]
+For fixed $k$ such that $|2k -n|<n/100$; that is, $\frac{n}{2} - \frac{n}{200} < k < \frac{n}{2} + \frac{n}{200}$ we have
+\[
+\mathbf{P}(E_{n,k}) = \dfrac{{n\choose k}^2}{{2n \choose n}}.
+\]
+So,
+\[
+\mathbf{P}(E_n) = \sum_{\frac{n}{2} - \frac{n}{200} < k < \frac{n}{2} + \frac{n}{200}} \dfrac{{n\choose k}^2}{{2n \choose n}}. 
+\]
+But using the notation from the question we can rewrite this expression so that we can use the bound given in the question. In particular,
+\[
+f(k,n,1/2)^2 = \left( {n\choose k}\left( 1/2 \right)^k \left( 1/2 \right)^{n-k} \right)^2
+= {n\choose k}^2 \left( 1/2 \right)^{2n}
+\]
+and
+\[
+f(n,2n,1/2) = {2n\choose n} \left( 1/2 \right)^{2n}.
+\]
+Hence, we want to compute
+\[
+\mathbf{P}(E_n) = \frac{1}{f(n;2n,\frac{1}{2})} \sum_{\frac{n}{2} - \frac{n}{200} < k < \frac{n}{2} + \frac{n}{200}} f\left(k;n,\frac{1}{2}\right)^2 
+\]
+Using the complementary event and the given result $\dfrac{f(k ; n, p)}{f(n ; 2 n, p)} \leq M$ for all $n \geq 1$, $p=1/2$ and $0 \leq k \leq n$, we have
+\[
+\mathbf{P}(E_n^c) = \frac{1}{f(n;2n,\frac{1}{2})} \sum_{\begin{array}{c} 
+k\leq\frac{n}{2} - \frac{n}{200}\\ k \geq \frac{n}{2} + \frac{n}{200}
+\end{array}} f\left(k;n,\frac{1}{2}\right)^2.
+\]
+Using the given bound we get
+\[
+\mathbf{P}(E_n^c) = \frac{1}{f(n;2n,\frac{1}{2})} \sum_{\begin{array}{c} 
+k\leq\frac{n}{2} - \frac{n}{200}\\ k \geq \frac{n}{2} + \frac{n}{200}
+\end{array}} f\left(k;n,\frac{1}{2}\right)^2
+\leq 
+M \sum_{\begin{array}{c} 
+k\leq\frac{n}{2} - \frac{n}{200}\\ k \geq \frac{n}{2} + \frac{n}{200}
+\end{array}} f\left(k;n,\frac{1}{2}\right)
+\]
+Note that $f\left(k;n,\frac{1}{2}\right) = \mathbf{P}(X = k)$ where $X$ is a Binomial random variable with parameters $p=1/2$ and $n$. Hence,
+\[
+\sum_{\begin{array}{c} 
+k\leq\frac{n}{2} - \frac{n}{200}\\ k \geq \frac{n}{2} + \frac{n}{200}
+\end{array}} f\left(k;n,\frac{1}{2}\right)
+=
+\mathbf{P}(X \leq \frac{n}{2} - \frac{n}{200}) + \mathbf{P}(X \geq \frac{n}{2} + \frac{n}{200}).
+\]
+By Weak Law of Large Numbers with $p = \frac{1}{2}$ and $\varepsilon = \frac{1}{200}$ we have $\mathbf{P}(E_n^c) \rightarrow 0$ as $n$ tends to infinity. Therefore, $\mathbf{P}(E_n) \rightarrow 1$ as $n$ tends to infinity.
+
+**Commentary on the question** Part 3 is challenging, so here is a commentary on the question.
+
+We recall some facts from the notes
+
+- $\mathbf{P}(X=k) = {n \choose k} p^k (1-p)^{n-k}$ where $X$ is a Binomial random variable with parameters $n$ and $k$.
+- We have $\mathbf{P}(a \leq X \leq b) = \sum_{k=a}^b \mathbf{P}(X=k)$ where $0 \leq a \leq b \leq b$ and $a,b$ are integers.
+- The statement in the WLLN that 
+\[
+\mathbf{P}(np - n\varepsilon \leq X_n \leq np + n\varepsilon) = \sum_{np - n\varepsilon \leq k \leq np + n\varepsilon,\ k\in \mathbf{Z}} {n \choose k} p^k (1-p)^{n-k}.
+\]
+
+Part 3 asks us to evaluate 
+\[
+\lim_{n\rightarrow \infty} \mathbf{P}(E_n).
+\]
+Before we can do this we need to determine an expression for $\mathbf{P}(E_n)$. Once we have an expression we need to determine how best to compute the limit.The first part of the question generates an expression for $\mathbf{P}(E_n)$ where we note that we are summing over $k$s for which
+$n/2 - n/200 < k < n/2 + n/200$. This looks very much like an expression that the WLLN generates. The hint from the question then shows us we can bound  $\mathbf{P}(E_n)$ by an expression that is exactly like that seen in the WLLN. However, we know from our work in Analysis that if we are going to evaluate such a limit then we need inequality in the form
+\[
+a_n \leq b_n \leq c_n
+\]
+with the limits of $(a_n)$ and $(c_n)$ being identical. We note that if we move to the complementary event, then we get
+\[
+0\leq \mathbf{P}(E_n^c) \leq M \sum_{\begin{array}{c} 
+k\leq\frac{n}{2} - \frac{n}{200}\\ k \geq \frac{n}{2} + \frac{n}{200}
+\end{array}} f\left(k;n,\frac{1}{2}\right).
+\]
+It is only at this point that we apply the WLLN to show that $\mathbf{P}(E_n^c)$ tends to 0 using the squeeze rule from analysis. Hence, we must have $\mathbf{P}(E_n)$ tends to 1. 
+
+### Solutions to [Class 13 Exercises] {-}
+
+#### Solution to Exercise\ \@ref(exr:radioactive) {-}
+Divide the minute into intervals of length $\delta t$ seconds. Then we expect that when $\delta t$ is small
+the probability of one or more emissions occurring in the interval is approximately $\delta t/10$. Note the
+probability of more than one emission is negligible as $\delta t$ becomes small. Assume the independence
+of emissions in the different intervals. Then the total number of emissions in the minute should be
+approximately Binomially distributed with parameters $n=60/(\delta t)$ and $p = (\delta t)/10$. That is, there are $n = 60/(\delta t)$ intervals in one minute and the probability of any event in one of those intervals is $p = (\delta t)/10$. But $\delta t$ is arbitrary and can be taken very small so that $n$ is very large, and then the Poisson distribution for the number of emissions is reasonable. Hence, every one minute there are $np = 6$ events, but this must also equal $\lambda\times 1 = 6$. (Where the 1 is represening 1 minute.) Therefore, a Poisson distribution with $\lambda = 6$ (per minute) is appropriate.
+
+#### Solution to Exercise\ \@ref(exr:randomvar) {-}
+Recall that $e^{\lambda} = \sum_{k=0}^{\infty} \frac{\lambda^k}{k!}$, hence
+\[
+\sum_{k=0}^{\infty} \mathbf{P}(X=k) = \sum_{k=0}^{\infty} e^{-\lambda} \frac{\lambda^k}{k!} = e^{-\lambda} \sum_{k=0}^{\infty}  \frac{\lambda^k}{k!} = e^{-\lambda}e^{\lambda} = 1.
+\]
+
+#### Solution to Exercise\ \@ref(exr:online) {-}
+1. 
+  (i) The probability of winning $k$ times is given by a Binomial random variable $X$ with parameters $n=52$ and $p = \frac{1}{104}$. Thus
+  \[\mathbf{P}(X = k) = p(k,52, 1/104) = {52 \choose k} \left( \frac{1}{104} \right)^k  \left( 1 - \frac{1}{104} \right)^{52 - k}.\]
+    
+  (ii) We use the Poisson distribution to form the approximation. In particular, using the parameter $\lambda = np = 52\times \frac{1}{2\times 52}$ we get 
+  \[\mathbf{P}(X = k) \approx \frac{ (1/2)^k}{k!}e^{-\frac{1}{2}}. \]
+  
+  (iii) With $k=2$, we get the probability of winning twice is approximately
+  \[ \frac{ (1/2)^2}{2!}e^{-\frac{1}{2}} = \frac{1}{8\sqrt{e}}. \]
+  
+  (iv) Since $\mathbf{P}(X \geq 2) = 1 - \mathbf{P}(X=0)- \mathbf{P}(X=1)$ we have the probability of winning at least twice is
+  \begin{align*} 
+  1 - \frac{ (1/2)^0}{0!}e^{-\frac{1}{2}} - \frac{ (1/2)^1}{1!}e^{-\frac{1}{2}}  &= 1 - e^{-\frac{1}{2}} - \frac{1}{2}e^{-\frac{1}{2}} \\
+  &= 1 - \frac{3}{2\sqrt{e}}.
+  \end{align*}
+    
+2. In this case we again use the Poisson distribution to approximate the Binomial distribution. In particular, using this approximation we know by generalising part (iv) that as $n\rightarrow \infty$ the probability of winning at least twice is
+\[
+1 - \frac{ (\lambda)^0}{0!}e^{-\lambda} - \frac{ \lambda}{1!}e^{-\lambda} = 1 - (1 + \lambda)e^{-\lambda}.
+\]
+Now we know that $p = \frac{1}{n}$ and the number of times played is at least $2n$, hence $\lambda \geq 2n \times \frac{1}{n} = 2$. Hence, since the function $\lambda \mapsto 1 - (1 + \lambda)e^{-\lambda}$ is increasing, we have
+\[
+1 - (1 + \lambda)e^{-\lambda} \geq 1 - (1 + 2)e^{-2} = 1 - 3e^{-2}.
+\]
+Using the given fact, $e^2 > 6$ we have that $-e^{-2} > 1/6$. Hence, $1 - (1 + \lambda)e^{-\lambda} \geq  1 - 3e^{-2} > 1 - 3\times \frac{1}{6} = 1/2$. Applying the definition of limit we know that there exists an integer $N\geq 1$ such that if $n\geq N$ then $\mathbf{P}(X \geq 2) \geq 1/2$.
+
+### Solutions to [Class 14 Exercises]
+
+#### Solution to Exercise\ \@ref(exr:students) {-}
+Consider a random variable $X$ having the Binomial distribution with parameters $n = 400$ and $p = \dfrac{1}{2}$. Of course $\mathbf{P}(X = 230)$ is small. But the Gaussian approximation to the Binomial distribution gives
+\[ 
+\mathbf{P}(X \geq  230) \approx \int_{z_1}^{\infty} \phi(z)dz 
+\]
+To compute $z_1$ use the statement of the De Moivre-Laplace theorem, that is, $230 = np + z_1\sqrt{np(1-p)}$, so
+\[
+230 = 400\times \frac{1}{2} + z_1 \sqrt{400 \times \frac{1}{2}\times \frac{1}{2}}.
+\]
+Thus $z_1 = 3$. Therefore,
+\[ 
+\mathbf{P}(X \geq  230) \approx \int_{3}^{\infty} \phi(z)dz = 0.001\ ( 3 d.p.),
+\]
+and on this basis we view it as very unlikely we would have observed as many as birthdays as we did falling in the first six months if the uniform model was a good one.
+
+Here, the theorem tells us nothing about how good the approximation we have obtained will be. But in fact these approximations are very good indeed.
+
+#### Solution to Exercise\ \@ref(exr:cricket) {-}
+Assume the hits are independent and that the probability of a hit is $p=0.3$. Model the situation as a binomial random variable $X_n$ with parameters $n=535$ and $p=0.3$. We want to know $\mathbf{P}(X_n \geq 197)$. Using the DeMoivre-Laplace theorem
+\[
+\mathbf{P}(X \geq  197) \approx \int_{z_1}^{\infty} \phi(z)dz 
+\]
+where $z_1$ satisfies $535\times 0.3 + z_1 \sqrt{535\times 0.3\times 0.7} = 197$. That is, 
+\[
+z_1 = \frac{197 - 535\times 0.3}{\sqrt{535\times 0.3\times 0.7}} = 3.444\mbox{ (3 decimal place)}.
+\]
+A computation (using, for example, (http://onlinestatbook.com/2/calculators/normal_dist.html) ) gives $\mathbf{P}(X \geq  197) \approx 0.0003$.
+
+### Solutions to [Chapter 4 Consolidation Questions]
+
+#### Solution to Exercise\ \@ref(exr:printing) {-}
+1. Let $A$ be the event that the reader spots $m$ misprints and fails to spot $n$ misprints, then 
+\[
+\mathbf{P}(A) = {m+n \choose m}p^m (1-p)^n.
+\]
+That is, for a fixed ordering of the $m+n$ possible trials the probability of $m$ success and $n$ failures is $p^m (1-p)^n$, but we need to include the number of ways this even can occur.
+
+2. Let B be the event that the reader fails to spot exactly $n$ misprint. Let $C$ be the event the reader spots $m$ misprints. Then
+\[
+\mathbf{P}(B\mid C) = \frac{\mathbf{P}(B\cap C)}{\mathbf{P}(C)}. 
+\]
+Now,
+\[
+\mathbf{P}(B \cap C) = \frac{e^{-\lambda}\lambda^{n+m}}{(m+n)!}p^m (1-p)^n \frac{ (n+m)!}{m!n!},
+\]
+and
+\[
+\mathbf{P}(C) = \sum_{r=0}^{\infty} \frac{e^{-\lambda}\lambda^{r+m}}{(r+m)!} p^m (1-p)^r {m+r \choose m} = \frac{e^{-\lambda}p^m\lambda^m}{m!} \sum_{r=0}^{\infty} \frac{\lambda^r (1-p)^r}{r!}.
+\]
+Therefore,
+\[
+\mathbf{P}(B\mid C) = \frac{\lambda^n (1-p)^n }{n!} \left(\sum_{r=0}^{\infty} \frac{\lambda^r (1-p)^r}{r!}\right)^{-1} = \frac{\lambda^n (1-p)^n }{n!} e^{-(1-p)\lambda}.
+\]
+
+#### Solution to Exercise\ \@ref(exr:posters) {-}
+1. Let $X$ be the random variable that denotes the number of errors spotted. Then
+\begin{align*}
+\mathbf{P}(X=k) &= \sum_{i=k}^{\infty} \frac{e^{-\lambda}\lambda^i}{i!} \frac{i!}{k!(i-k)!}p^k (1-p)^{i-k} \\
+&= \frac{e^{-\lambda}\lambda^i p^k}{k!} \sum_{i=k}^{\infty} \frac{ \lambda^{i-k} (1-p)^{i-k}}{(i-k)!} \\
+&= \frac{e^{-\lambda}\lambda^i p^k}{k!}e^{\lambda (1-p)} \\
+&= \frac{e^{-p\lambda}(p\lambda)^k}{k!}.
+\end{align*}
+
+2. Let $A_1$ be the event that you place a red cross on one of the first $k-1$ posters and $A_2$ be the event that you place no red crosses on one of the first $k-1$ posters. Let $X$ be the random variable denoting the number of red crosses placed on the $k$th poster. We require
+\[
+\mathbf{P}(A_1)\mathbf{P}(X\geq 1) + \mathbf{P}(A_2)\mathbf{P}(X\geq 2).
+\]
+Note $\mathbf{P}(X\geq 1) = 1 - \mathbf{P}(X=0) = 1 - e^{-p\lambda}$ and $\mathbf{P}(X\geq 2) = 1 - \mathbf{P}(X=0) - \mathbf{P}(X=1) = 1 - e^{-p\lambda} (1 + p\lambda)$. Next
+\[
+\mathbf{P}(A_1) = {k-1 \choose 1} e^{-p\lambda} p\lambda (e^{-p\lambda})^{k-2} = (k-1)p\lambda e^{-(k-1)p\lambda}.
+\] 
+Finally
+\[
+\mathbf{P}(A_2) = e^{-(k-1) p \lambda}.
+\]
+Therefore,
+\begin{align*}
+\mathbf{P}(A_1)\mathbf{P}(X\geq 1) + \mathbf{P}(A_2)\mathbf{P}(X\geq 2) &= (k-1)p\lambda e^{-(k-1)p\lambda} \times (1 - e^{-p\lambda}) + e^{-(k-1) p \lambda} \times (1 - e^{-p\lambda} (1 + p\lambda)) \\
+&= e^{-p\lambda(k-1)}\left( (k-1)p\lambda(1 - e^{-p\lambda}) + [ 1- e^{-p\lambda}(1+p\lambda)] \right) \\
+&= e^{-p\lambda(k-1)}\left( (1 - e^{-p\lambda})[ (k-1)p\lambda + 1 + p\lambda]  - p\lambda   \right) \\
+&= e^{-p\lambda(k-1)}\left[ (1 - e^{-p\lambda}) (kp\lambda + 1) - p\lambda \right].
+\end{align*}
+
+#### Solution to Exercise\ \@ref(exr:binomialdist) {-}
+This question utilises the methods from an earlier example.
+
+We sketch this answer following the exact method from the example. Apply the De Moivre-Laplace noting that $z_1 = -\dfrac{1}{\sqrt{2n}}$ and $z_2 = \dfrac{1}{\sqrt{2n}}$. So,
+\[
+\mathbf{P}(X=n) \approx \int_{-\frac{1}{\sqrt{2n}}}^{\frac{1}{\sqrt{2n}}} \dfrac{1}{\sqrt{2\pi}} e^{-z^2/2} dz.
+\]
+Approximate this integral as a rectangle of height $\dfrac{1}{\sqrt{2\pi}}$ and width $\sqrt{\dfrac{2}{n}}$ gives
+\[
+\mathbf{P}(X=n) \approx \dfrac{1}{\sqrt{n\pi}}.
+\]
+Hence
+\[
+\mathbf{P}(X=n) = \frac{ (2n)! }{n!n!} \left( \frac{1}{2} \right)^{2n} \approx \dfrac{1}{\sqrt{n\pi}}.
+\]
+Rearranging gives the result.
+
+#### Solution to Exercise\ \@ref(exr:score1) {-}
+Let $\Omega=\{ n \in \mathbf{Z}\mid n\geq 0\}$. Let $E_n$ be the event you reach $n$ points starting with 0 points. Following the arguments for the gambler's ruin problem gives
+\[
+\mathbf{P}(E_n)  = \frac{1}{2}\mathbf{P}(E_{n-1}) + \frac{1}{2}\mathbf{P}(E_{n-2})
+\]
+Let $p(n) = \mathbf{P}(E_n)$, then we get $p_n - \frac{1}{2}p_{n-1} - \frac{1}{2}p_{n-2} = 0$. Using the method given in the notes gives the general solution
+\[
+p(n) = C_1 + C_2\left( - \frac{1}{2} \right)^n.
+\]
+The situations permits determination of $p(1)$ and $p(2)$. Note that $p(1) = \dfrac{1}{2}$. Have a score of 2 arises in two ways, either you score 2 points directly, or you score 1 point twice. Thus, $p(2) = \dfrac{1}{2} + \dfrac{1}{2}\times\dfrac{1}{2} = \dfrac{3}{4}$. Using these conditions gives $C_1= \dfrac{2}{3}$ and $C_2 = \dfrac{1}{3}$. Therefore,
+\[
+p(n) = \frac{2}{3} + \frac{1}{3}\left( - \frac{1}{2} \right)^n
+\]
+Note that for large $n$, $p(n) \approx \dfrac{2}{3}$, what do you think this means?
