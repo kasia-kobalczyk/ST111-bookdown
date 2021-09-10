@@ -449,8 +449,7 @@ where $q= 1- p$. Using the final estimate from the proof with $p$ replaced with 
 :::
 
 
-### Class 12: Questions
-
+### Class 12 Exercises
 
 :::{.exercise #unitsquares}
 Let $n \geq 1$ be an integer. Let $X = \{ (x,y) \in \mathbf{R}^2 : 0 \leq x, y \leq n \}$. Consider $X$ as the disjoint union of $n^2$ unit squares with vertices having integer coordinates.
@@ -635,6 +634,8 @@ with $\lambda > 0$. Show that $\sum_{k=0}^{\infty} \mathbf{P}(X = k) = 1$.
 :::
 
 :::{.exercise #online}
+&nbsp;
+
 1. You play an online game once a week for 52 weeks. Each week, with probability $1 / 104$, you have a chance to win a prize in this online game. 
 
    (i) Assuming independence of each win, write down the appropriate distribution that models the number of wins in the 52 week period.
@@ -827,7 +828,7 @@ Simplifying we require $\sqrt{n} \geq 98$; that is, $n \geq 98^2$. As a crude es
 :::
 
 
-### Class 14: Questions
+### Class 14 Exercises
 
 :::{.exercise #students}
 Suppose that we observe that 230 out of the 400 mathematics students in the class were born in the first 6 months of the year. Is this observation reasonably consistent with the hypothesis that birthdays (of mathematics students) are uniformly distributed throughout the year? 

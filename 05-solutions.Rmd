@@ -406,7 +406,7 @@ But ${\mathbf P}(A_i\cap A_{i+1})= 2^{-11}$  ,  ${\mathbf P}(A_i\cap A_{i+2})= 2
 which is useless since probabilities are always non-negative.
 
 
-### Solutions to [Chapter 2 Consolidation Questions]
+### Solutions to [Chapter 2 Consolidation Questions] {-}
 
 #### Solution to Exercise\ \@ref(exr:smalltown) {-}
 Before you sneak down to look at the answer, try this simplified version
@@ -826,7 +826,7 @@ this is the event that gambler is _ever_ ruined if they play indefinitely.
 That is, in a game that is fair ($p=\frac{1}{2}$) or bias against the gambler, the probability of being ruinned if they play indefinitely is 1.
 
 
-### Solutions to [Chapter 3 Consolidation Questions]
+### Solutions to [Chapter 3 Consolidation Questions] {-}
 
 
 #### Solution to Exercise\ \@ref(exr:genes) {-}
@@ -967,7 +967,7 @@ Let $X$ be a random variable that denotes the number of people out of 52 who res
 \]
 
 
-### Solutions to [Class 11 Exercisses] {-}
+### Solutions to [Class 11 Exercises] {-}
 
 #### Solution to Exercise\ \@ref(exr:gamblingvariant) {-}
 Let $X$ be the number of times we win in $n$ games then our final wealth is given by 
@@ -988,7 +988,7 @@ Taking logarithms and looking for a turning point gives the condition
 \]
 For $p = 2/3$, the unique solution (and hence the unique turning point, which must be a maximum) is $\alpha= 1/2$.
 
-### Solutions to [Class 12 Exercisses] {-}
+### Solutions to [Class 12 Exercises] {-}
 
 #### Solution to Exercise\ \@ref(exr:unitsquares) {-}
 1. Each route from $(0,0)$ to $(n,n)$ travels along $2n$ edges, exactly $n$ of these are parallel to the $x$ (or $y$) axis. Hence, from $2n$ edges we must choose $n$, giving ${2n \choose n}$ routes.
@@ -1120,7 +1120,7 @@ Now we know that $p = \frac{1}{n}$ and the number of times played is at least $2
 \]
 Using the given fact, $e^2 > 6$ we have that $-e^{-2} > 1/6$. Hence, $1 - (1 + \lambda)e^{-\lambda} \geq  1 - 3e^{-2} > 1 - 3\times \frac{1}{6} = 1/2$. Applying the definition of limit we know that there exists an integer $N\geq 1$ such that if $n\geq N$ then $\mathbf{P}(X \geq 2) \geq 1/2$.
 
-### Solutions to [Class 14 Exercises]
+### Solutions to [Class 14 Exercises] {-}
 
 #### Solution to Exercise\ \@ref(exr:students) {-}
 Consider a random variable $X$ having the Binomial distribution with parameters $n = 400$ and $p = \dfrac{1}{2}$. Of course $\mathbf{P}(X = 230)$ is small. But the Gaussian approximation to the Binomial distribution gives
@@ -1150,7 +1150,7 @@ z_1 = \frac{197 - 535\times 0.3}{\sqrt{535\times 0.3\times 0.7}} = 3.444\mbox{ (
 \]
 A computation (using, for example, (http://onlinestatbook.com/2/calculators/normal_dist.html) ) gives $\mathbf{P}(X \geq  197) \approx 0.0003$.
 
-### Solutions to [Chapter 4 Consolidation Questions]
+### Solutions to [Chapter 4 Consolidation Questions] {-}
 
 #### Solution to Exercise\ \@ref(exr:printing) {-}
 1. Let $A$ be the event that the reader spots $m$ misprints and fails to spot $n$ misprints, then 

@@ -595,7 +595,9 @@ A fair die is tossed eight times. What is the probability of exactly three 1's, 
 :::
 
 :::{.exercise #rolldie}
-1.  A die is rolled twice. Describe the sample space and count how many sample points there are. Assuming that outcomes of the experiment are equally likely, determine the probability of the event that the scores in two throws are different.
+&nbsp;
+
+1. A die is rolled twice. Describe the sample space and count how many sample points there are. Assuming that outcomes of the experiment are equally likely, determine the probability of the event that the scores in two throws are different.
 
 2. A die is rolled three times. Describe the sample space and count how many sam- ple points there are. Assuming that outcomes of the experiment are equally likely, determine the probability of the event that all scores are different.
 :::

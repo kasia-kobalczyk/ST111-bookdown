@@ -11,7 +11,7 @@ At the end of the chapter you should be familiar with and be able to:
 
 **Chapter Statistician: Calyampudi Radhakrishna Rao**
 
-Calyampudi Radhakrishna Rao, FRS was born in the state Karnataka in southern Indian. Perhaps his most famous results are the Cram\'er--Rao bound, the Rao--Blackwell theorem, Fisher--Rao theorem and Rao distance. In 1991, The Journal of Quantitative Economics published a special issue in Rao's honour, including `\emph{Dr. Rao is a very distinguished scientist and a highly eminent statistician of our time. His contributions to statistical theory and applications are well known, and many of his results, which bear his name, are included in the curriculum of courses in statistics at bachelor's and master's level all over the world. He is an inspiring teacher and has guided the research work of numerous students in all areas of statistics. His early work had greatly influenced the course of statistical research during the last four decades. One of the purposes of this special issue is to recognize Dr. Rao's own contributions to econometrics and acknowledge his major role in the development of econometric research in India.
+Calyampudi Radhakrishna Rao, FRS was born in the state Karnataka in southern Indian. Perhaps his most famous results are the Cram\'er--Rao bound, the Rao--Blackwell theorem, Fisher--Rao theorem and Rao distance. In 1991, The Journal of Quantitative Economics published a special issue in Rao's honour, including *Dr. Rao* is a very distinguished scientist and a highly eminent statistician of our time. His contributions to statistical theory and applications are well known, and many of his results, which bear his name, are included in the curriculum of courses in statistics at bachelor's and master's level all over the world. He is an inspiring teacher and has guided the research work of numerous students in all areas of statistics. His early work had greatly influenced the course of statistical research during the last four decades. One of the purposes of this special issue is to recognize Dr. Rao's own contributions to econometrics and acknowledge his major role in the development of econometric research in India.
 ```{r, out.width = "20%", fig.align='center', fig.cap="Calyampudi Radhakrishna Rao.", echo=FALSE} 
 knitr::include_graphics('images/ST111_CalyampudiRadhakrishnaRao.png')
 ```
@@ -190,7 +190,7 @@ C &= \{HHT, HTH, THH,TTH, TTT\} \\
 D &= \{TTT, HHH\}
 \end{align*}
 Compute $\mathbf{P}(A|B)$, $\mathbf{P}(C|B)$ and $\mathbf{P}(D|B)$. Comment on the results.
-::::
+:::
 
 :::{.solution}
 We have  
