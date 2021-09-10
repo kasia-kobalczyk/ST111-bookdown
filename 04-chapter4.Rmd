@@ -193,7 +193,7 @@ where we have used the result $p^3 +q^3 = 1 - 3pq$.
 :::
 
 
-### Class 10 Exercises
+### Class 10 Exercises {#ex10}
 
 :::{.exercise #seeds}
 The probability that a seed of a certain kind will germinate is $\dfrac{2}{3}$. Suppose
@@ -326,7 +326,7 @@ as $n\rightarrow \infty$. (Here we just happened to select $\varepsilon = 0.01$.
 ::::
 
 
-### Class 11 Exercises
+### Class 11 Exercises {#ex11}
 
 :::{.exercise #gamblingvariant}
 Consider the following variant on the gambling game from the tutorial exercise sheet. Each time you play, if you gamble $s$ units of wealth and win then your stake is returned to you together with winnings of $2s$. If you lose you forfeit your stake. Let the probability of winning each time you play be $p = 2/3$.
@@ -449,7 +449,7 @@ where $q= 1- p$. Using the final estimate from the proof with $p$ replaced with 
 :::
 
 
-### Class 12 Exercises
+### Class 12 Exercises {#ex12}
 
 :::{.exercise #unitsquares}
 Let $n \geq 1$ be an integer. Let $X = \{ (x,y) \in \mathbf{R}^2 : 0 \leq x, y \leq n \}$. Consider $X$ as the disjoint union of $n^2$ unit squares with vertices having integer coordinates.
@@ -619,7 +619,7 @@ The only positive solution is $p = \dfrac{\sqrt{2}}{n}$. When $n>1$, $\dfrac{\sq
 Therefore, the maximum value of $f$ is $f\left( \dfrac{\sqrt{2}}{n} \right) = e^{-\sqrt{2}}\left( \sqrt{2} + 1 \right) \approx 0.59$ to 2 decimal places.
 :::
 
-### Class 13 Exercises
+### Class 13 Exercises {#ex13}
 
 :::{.exercise #radioactive}
 Consider a radioactive sample randomly emitting alpha particles at random at an average rate of one particle every 10 seconds. We would model the number of particles emitted in a minute as a random variable with the Poisson distribution with $\lambda = 6$. Why is this a reasonable model? 
@@ -828,7 +828,7 @@ Simplifying we require $\sqrt{n} \geq 98$; that is, $n \geq 98^2$. As a crude es
 :::
 
 
-### Class 14 Exercises
+### Class 14 Exercises {#ex14}
 
 :::{.exercise #students}
 Suppose that we observe that 230 out of the 400 mathematics students in the class were born in the first 6 months of the year. Is this observation reasonably consistent with the hypothesis that birthdays (of mathematics students) are uniformly distributed throughout the year? 
@@ -840,7 +840,7 @@ A cricketer's batting average was 197 hits out of 535, (about $0.368$). Their li
 Create a model to estimate the probability that this batting average occurs by chance for a cricketer with a $0.300$ batting average.
 :::
 
-## Chapter 4 Consolidation Questions
+## Chapter 4 Consolidation Questions {#cons4}
 
 Chapter Consolidation Questions provide additional practice covering the entire chapter. The questions may require you to evaluate information to determine the appropriate approach to solve a problem. For this reason, you may find these questions best saved for revision.
 
