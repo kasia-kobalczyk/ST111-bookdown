@@ -1,4 +1,7 @@
-# Experiments with random outcomes
+
+# Bogus chapter
+
+# Experiments with random outcomes {#chap:randomoutcomes}
 
 **Chapter outcomes**
 
@@ -96,7 +99,7 @@ and, in the case of an infinite sequence,
 \mathbf{P} \left( \bigcup_{i=1}^{n} A_i\right) = \sum_{1\leq i \leq n} \mathbf{P} (A_i) - \sum_{1\leq i_1< i_2 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2}) + \sum_{1\leq i_1 < i_2 < i_3 \leq n} \mathbf{P} (A_{i_1} \cap A_{i_2} \cap A_{i_3}) - \dots
 \]
 
-## Class 1: Equally likely events
+## Class 1: Equally likely events {#sec:equallylikely}
 
 ### Introduction 
 
@@ -281,7 +284,7 @@ B
 :::
 
 
-### Class 1 Exercises {#ex1}
+### Class 1 Exercises
 
 :::{.exercise #cards40}
 Consider forty cards that are all labelled. From these cards 7 are labelled $W$, 6 are labelled $X$, 4 are labelled $Y$ and 8 are labelled $Z$. The remainder (15) are labelled using other letters of the alphabet. Suppose a card is drawn (uniformly) at random. Formally write down the following events:

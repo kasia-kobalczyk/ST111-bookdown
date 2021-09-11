@@ -2,9 +2,9 @@
 
 # Solutions to Exercises
 
-## Chapter 1 {-}
+## Chapter\ \@ref(chap:randomoutcomes) {-}
 
-### Solutions to [Class 1 Exercises](#ex1) {-}
+### Section\ \@ref(sec:equallylikely) {-}
 
 #### Solution to Exercise\ \@ref(exr:cards40) {-}
 In some cases there are multiple different, but equivalent answers. Let $A$ be the event the drawn card shows a "W" and $B$ be the event the drawn card shows a "X". 
