@@ -1,4 +1,4 @@
-# Enumeration and counting
+# Enumeration and counting {#chapterenumandcount}
 
 **Chapter outcomes**
 
@@ -51,7 +51,7 @@ population it contains $k_1$ individuals of type 1 and $k_2 = n - k_1$ individua
 \]
 
 
-## Class 4: Enumeration and counting
+## Class 4: Enumeration and counting {#sec:enumandcount}
 
 ### Introduction 
 
@@ -263,7 +263,7 @@ The probability that your particular ticket matches all 6 numbers is
 :::
 
 
-### Class 4 Exercises {#ex4}
+### Class 4 Exercises
 
 :::{.exercise #finitesets}
 Let $A$ and $B$ be finite sets. Suppose $|A| = n$ and $|B| = m$. Determine how many functions $f: A \rightarrow B$ exist. (That is, functions that can be defined.)
@@ -286,7 +286,7 @@ Consider only paths which follow the edges of the chess squares, which start at 
 :::
 
 
-## Class 5: Samples
+## Class 5: Samples {#sec:samples}
 
 :::{.example}
 A _sample_ drawn from a population is some selection of individuals from that population.
@@ -437,7 +437,7 @@ In our sample of size 10, we wish 1 to have this gene and the remaining 9 to not
 :::
 
 
-### Class 5 Exercises {#ex5}
+### Class 5 Exercises 
 
 :::{.exercise #twins}
 A tutorial class has 6 pairs of twins. The class tutor intends to run a quick quiz and would like to avoid putting any pair of twins into the same team. 
@@ -468,7 +468,7 @@ The first $n$ individuals are interviewed and _this group_ contains a unique hig
 :::
 
 
-## Class 6: Extended examples
+## Class 6: Extended examples {#sec:extendedexamples}
 
 We bring together some extended examples that illustrate the ideas covered so far.
 
@@ -588,7 +588,7 @@ and the event $\bigcup_{i=0}^9 A_i$ is precisely that  more than $30$ digits  ne
 :::
 
 
-### Class 6 Exercises {#ex6}
+### Class 6 Exercises
 
 :::{.exercise #die8}
 A fair die is tossed eight times. What is the probability of exactly three 1's, two 2's and three 5's? (Assuming all outcomes are equally likely.)

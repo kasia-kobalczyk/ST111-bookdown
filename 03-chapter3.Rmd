@@ -1,4 +1,4 @@
-# Independence and conditioning
+# Independence and conditioning {#chapterindependenceandcount}
 
 **Chapter outcomes**
 
@@ -66,7 +66,7 @@ Events $E_1 , E_2 , \ldots$ are mutually independent if for all choices of $i_1 
 - Picking a real number uniformly at random from the interval $[0, 1)$, representing it via its decimal expansion, and letting $E_i$ be the event that $i$th digit in that expansion is a 0.
 
 
-## Class 7: Conditional probability
+## Class 7: Conditional probability {#sec:conditionalprob}
 
 We begin with two motivating examples.
 
@@ -378,7 +378,7 @@ calculate the probabilities of individual sample points. The probability measure
 :::
 
 
-### Class 7 Exercises {#ex7}
+### Class 7 Exercises
 
 :::{.exercise #balls}
 An bag contains 30 balls, there are 10 red balls, 5 yellow balls and 15 black balls. A ball is selected at random from the bag. If the balls is not red, what is the probability that it is yellow? 
@@ -417,7 +417,7 @@ Is their evidence of bias in the university's selection process?
 :::
 
 
-## Class 8: Bayes' theorem and Independence
+## Class 8: Bayes' theorem and Independence {#sec:bayesandindep}
 
 The next result is often stated in a simplified form (see the front page of these notes). In general, one may view this result as the start of Bayesian inference. Intuitively, it states the probability the evidence supports a particular hypothesis (that is, the probability a hypothesis is true given the evidence) is the probability of a positive outcome from all the potential positives whether they are true positives or false positives.
 
@@ -687,7 +687,7 @@ events.
 :::
 
 
-### Class 8 Exercises {#ex8}
+### Class 8 Exercises
 
 :::{.exercise #cardsinbag}
 Three cards are placed in a bag. One card is black on both sides, one card is white on both sides and the third card is black on one side and white on the other.  One card is selected uniformly at random (so all cards are equally likely to be selected) and placed on a table. You see a black face on the card, determine the probability the other side of the card is black.
@@ -718,7 +718,7 @@ Let $\mathbf{P}$ be a probability measure on a suitable sample space. Let $B$ be
 :::
 
 
-## Class 9: Application of independence
+## Class 9: Application of independence {#sec:indepapplications}
 
 We end this chapter with a famous problem known as Gambler's ruin, in which independence plays an important role.
 
@@ -791,7 +791,7 @@ if the game were fair, but this probability falls to approximately $0.06$ becaus
 :::
 
 
-### Class 9 Exercises {#ex9}
+### Class 9 Exercises
 
 :::{.exercise #biasgame}
 A game uses a bias coin and a line of integers. The coin shows "heads" with probability $p$ and "tails" with probability $q$. You start by placing a counter a 0. Each turn consists of a toss of the coin and then a counter moves subject to a set of rules. Suppose the counter is currently located at $n\in\mathbf{Z}$, then the rules determining the counter's move are:
@@ -826,7 +826,7 @@ of probabilities that $\mathbf{P}(F_k ) = \lim_{m\rightarrow \infty} \mathbf{P}(
 :::
 
 
-## Chapter 3 Consolidation Questions {#cons3}
+## Chapter 3 Consolidation Questions
 
 Chapter Consolidation Questions provide additional practice covering the entire chapter. The questions may require you to evaluate information to determine the appropriate approach to solve a problem. For this reason, you may find these questions best saved for revision.
 

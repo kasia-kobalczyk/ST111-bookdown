@@ -1,4 +1,4 @@
-# Binomial, Poisson, Gaussian distributions
+# Binomial, Poisson, Gaussian distributions {#chapterdistributions}
 
 **Chapter outcomes**
 
@@ -55,7 +55,7 @@ Fix $p\in(0, 1)$. For $n = 1, 2, 3,\ldots$ let $X_n$ have the Binomial distribut
 as $n$ tends to infinity, where $\phi(z) = \dfrac{1}{\sqrt{2\pi}} e^{-z^2/2}$ is the standard Gaussian density.
 
 
-## Class 10: Binomial distribution
+## Class 10: Binomial distribution {#sec:binomial}
 
 **Motivating question** A fair coin is tossed six times. What is the probability that exactly three heads turn up? 
 
@@ -193,7 +193,7 @@ where we have used the result $p^3 +q^3 = 1 - 3pq$.
 :::
 
 
-### Class 10 Exercises {#ex10}
+### Class 10 Exercises
 
 :::{.exercise #seeds}
 The probability that a seed of a certain kind will germinate is $\dfrac{2}{3}$. Suppose
@@ -209,7 +209,7 @@ Experience shows that 20\% of the people reserving tables at a certain restauran
 :::
 
 
-## Class 11: Weak Law of Large Numbers 
+## Class 11: Weak Law of Large Numbers {#sec:wlln}
 
 Suppose we toss a coin $n$ times. Let $X_n$ be number of times a head occurs in the $n$ tosses. The random variable $\dfrac{X_n}{n}$ represents the proportion (fraction) of heads that turn up and has a value between 0 and 1. A question is how $\dfrac{X_n}{n}$ behaves for large $n$? Simulations motivate the result. Running 1000 (bias with $p=0.4$) coin simulations and plotting $\dfrac{X_n}{n}$ against $n$ reveals that $\dfrac{X_n}{n}$ appears to converge as $n$ increases, in fact it appears to converge to $p$. The R code generates the simulation figure.
 
@@ -326,7 +326,7 @@ as $n\rightarrow \infty$. (Here we just happened to select $\varepsilon = 0.01$.
 ::::
 
 
-### Class 11 Exercises {#ex11}
+### Class 11 Exercises
 
 :::{.exercise #gamblingvariant}
 Consider the following variant on the gambling game from the tutorial exercise sheet. Each time you play, if you gamble $s$ units of wealth and win then your stake is returned to you together with winnings of $2s$. If you lose you forfeit your stake. Let the probability of winning each time you play be $p = 2/3$.
@@ -335,7 +335,7 @@ Suppose you stake a proportion $\alpha$ of your current wealth on each gamble. U
 :::
 
 
-## Class 12: Weak Law of Large Numbers: the proof
+## Class 12: Weak Law of Large Numbers: the proof {#sec:wlln-proof}
 
 The purpose of this section is to prove the Weak Law of Large Numbers.
 
@@ -449,7 +449,7 @@ where $q= 1- p$. Using the final estimate from the proof with $p$ replaced with 
 :::
 
 
-### Class 12 Exercises {#ex12}
+### Class 12 Exercises
 
 :::{.exercise #unitsquares}
 Let $n \geq 1$ be an integer. Let $X = \{ (x,y) \in \mathbf{R}^2 : 0 \leq x, y \leq n \}$. Consider $X$ as the disjoint union of $n^2$ unit squares with vertices having integer coordinates.
@@ -473,7 +473,7 @@ f(k ; n, p) = \frac{n!}{k! (n-k)!} p^k (1-p)^{n-k}.
 :::
 
 
-## Class 13: Poisson distribution
+## Class 13: Poisson distribution {#sec:poisson}
 
 **Motivating example** Suppose we wish to model the number incoming telephone calls to the emergency services in a large city. We might, for example, be interested in the probabilities of more than 10 phone calls occurring in a 5-minute time interval. We would need to consider different time periods since the number of incoming phone calls would probably be different, for example between 6pm and 7pm and 4am and 5am. For a given time interval, say 6pm and 7pm we assume the average number of phone calls per minute is a constant. Denote this rate by $\lambda$. (Thus, in a given 5-minute time interval, we would expect about $5\lambda$ phone calls.) This means that if we were to apply our
 model to the two time periods given above, we would simply use different rates
@@ -619,7 +619,7 @@ The only positive solution is $p = \dfrac{\sqrt{2}}{n}$. When $n>1$, $\dfrac{\sq
 Therefore, the maximum value of $f$ is $f\left( \dfrac{\sqrt{2}}{n} \right) = e^{-\sqrt{2}}\left( \sqrt{2} + 1 \right) \approx 0.59$ to 2 decimal places.
 :::
 
-### Class 13 Exercises {#ex13}
+### Class 13 Exercises
 
 :::{.exercise #radioactive}
 Consider a radioactive sample randomly emitting alpha particles at random at an average rate of one particle every 10 seconds. We would model the number of particles emitted in a minute as a random variable with the Poisson distribution with $\lambda = 6$. Why is this a reasonable model? 
@@ -651,7 +651,7 @@ with $\lambda > 0$. Show that $\sum_{k=0}^{\infty} \mathbf{P}(X = k) = 1$.
 :::
 
 
-## Class 14: Gaussian (normal) distribution 
+## Class 14: Gaussian (normal) distribution {#sec:gaussian}
 
 For large values of $n$ there is another approximation to the Binomial distribution.
 
@@ -828,7 +828,7 @@ Simplifying we require $\sqrt{n} \geq 98$; that is, $n \geq 98^2$. As a crude es
 :::
 
 
-### Class 14 Exercises {#ex14}
+### Class 14 Exercises 
 
 :::{.exercise #students}
 Suppose that we observe that 230 out of the 400 mathematics students in the class were born in the first 6 months of the year. Is this observation reasonably consistent with the hypothesis that birthdays (of mathematics students) are uniformly distributed throughout the year? 
@@ -840,7 +840,7 @@ A cricketer's batting average was 197 hits out of 535, (about $0.368$). Their li
 Create a model to estimate the probability that this batting average occurs by chance for a cricketer with a $0.300$ batting average.
 :::
 
-## Chapter 4 Consolidation Questions {#cons4}
+## Chapter 4 Consolidation Questions
 
 Chapter Consolidation Questions provide additional practice covering the entire chapter. The questions may require you to evaluate information to determine the appropriate approach to solve a problem. For this reason, you may find these questions best saved for revision.
 
