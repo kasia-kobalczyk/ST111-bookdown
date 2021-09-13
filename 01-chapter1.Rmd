@@ -1,6 +1,4 @@
 
-# Bogus chapter
-
 # Experiments with random outcomes {#chapterrandomoutcomes}
 
 **Chapter outcomes**
